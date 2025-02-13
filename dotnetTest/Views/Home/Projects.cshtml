@@ -1,0 +1,18 @@
+@model List<ProjectInfo>
+
+<h2>Users</h2>
+<table>
+    <tr>
+        <th>Project Name</th>
+        <th>Project Description</th>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.ProjectName</td>
+            <td>@user.ProjectDescription</td>
+        </tr>
+    }
+</table>
+
+<a href="@Url.Action("Create", "Project")">Add Project</a>
