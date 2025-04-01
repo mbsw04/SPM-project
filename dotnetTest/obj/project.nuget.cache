@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pzLGYHyhQWY=",
+  "dgSpecHash": "G2MXiUH6cf4=",
   "success": true,
-  "projectFilePath": "/Users/connyn/dotnetTest/dotnetTest.csproj",
+  "projectFilePath": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj",
   "expectedPackageFiles": [
     "/Users/connyn/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/Users/connyn/.nuget/packages/microsoft.extensions.logging.abstractions/2.0.0/microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",

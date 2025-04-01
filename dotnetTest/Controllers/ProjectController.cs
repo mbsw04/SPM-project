@@ -13,6 +13,16 @@ public class ProjectController(ProjectInfoRepository projectInfoRepository) : Co
         var projects = await projectInfoRepository.GetAllProjectInfosAsync();
         return View(projects);
     }
+    public async Task<IActionResult> TeamInfo()
+    {
+        var projects = await projectInfoRepository.GetAllProjectInfosAsync();
+        return View(projects);
+    }
+    public async Task<IActionResult> Reports()
+    {
+        var projects = await projectInfoRepository.GetAllProjectInfosAsync();
+        return View(projects);
+    }
 
     public IActionResult Create() => View();
 

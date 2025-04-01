@@ -6,6 +6,15 @@ a.navbar-brand[b-b2bfp0507x] {
   text-align: center;
   word-break: break-all;
 }
+/*
+.navbar{
+  background-color: #1E1B75;
+}
+*/
+ 
+.navbar-dark.bg-primary[b-b2bfp0507x] {
+  background-color: #1E1B75 !important; /* Deep Blue */
+}
 
 a[b-b2bfp0507x] {
   color: #0077cc;
@@ -39,10 +48,22 @@ button.accept-policy[b-b2bfp0507x] {
   line-height: inherit;
 }
 
+.container-fluid[b-b2bfp0507x]{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer[b-b2bfp0507x] {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+.flex-grow-1[b-b2bfp0507x]{
+  align-items: center;
+  justify-content: center;
+  margin-left: 6rem;
 }

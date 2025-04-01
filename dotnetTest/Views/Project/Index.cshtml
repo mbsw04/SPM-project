@@ -11,19 +11,29 @@
         <thead>
         <tr>
             <th>Project Name</th>
+            <th>Project Manager</th>
             <th>Project Description</th>
             <th>Tasks</th>
+            <th>Members</th>
         </tr>
         </thead>
         @foreach (var user in Model)
         {
             <tr>
-                <td>@user.ProjectName</td>
+                
+                <td><a href="">@user.ProjectName</a></td>
+                <td>@user.ProjectManagerName</td>
                 <td>@user.ProjectDescription</td>
                 <td>
                     @foreach (var task in @user.Tasks)
                     {
                         <li>@task</li>
+                    }
+                </td>
+                <td>
+                    @foreach (var member in @user.Members)
+                    {
+                        <li>@member</li>
                     }
                 </td>
             </tr>

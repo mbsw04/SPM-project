@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/connyn/dotnetTest/dotnetTest.csproj": {}
+    "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj": {}
   },
   "projects": {
-    "/Users/connyn/dotnetTest/dotnetTest.csproj": {
+    "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/connyn/dotnetTest/dotnetTest.csproj",
+        "projectUniqueName": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj",
         "projectName": "dotnetTest",
-        "projectPath": "/Users/connyn/dotnetTest/dotnetTest.csproj",
+        "projectPath": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj",
         "packagesPath": "/Users/connyn/.nuget/packages/",
-        "outputPath": "/Users/connyn/dotnetTest/obj/",
+        "outputPath": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/connyn/.nuget/NuGet/NuGet.Config"

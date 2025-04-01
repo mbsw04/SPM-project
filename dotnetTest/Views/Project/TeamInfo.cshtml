@@ -1,0 +1,40 @@
+@model List<ProjectInfo>
+@*Comment*@
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/site.css" type="text/css" />
+    <title>Test</title>
+</head>
+<div>
+    <h1>Current Teams</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Project Manager</th>
+            <th>Tasks</th>
+            <th>Members</th>
+        </tr>
+        </thead>
+        @foreach (var user in Model)
+        {
+            <tr>
+
+                <td><a href="">@user.ProjectName</a></td>
+                <td>@user.ProjectManagerName</td>
+                <td>
+                    @foreach (var task in @user.Tasks)
+                    {
+                        <li>@task</li>
+                    }
+                </td>
+                <td>
+                    @foreach (var member in @user.Members)
+                    {
+                        <li>@member</li>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>

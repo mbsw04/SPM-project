@@ -11,12 +11,23 @@
         <label asp-for="ProjectName" class="control-label"></label>
         <input asp-for="ProjectName" class="form-control" />
     </div>
+    <div class="form-group">
+        <label asp-for="ProjectManagerName" class="control-label"></label>
+        <input asp-for="ProjectManagerName" class="form-control" />
+    </div>
 
     <div class="form-group">
         <label asp-for="ProjectDescription" class="control-label"></label>
         <textarea asp-for="ProjectDescription" class="form-control"></textarea>
     </div>
 
+    <h4>Members</h4>
+    <div id="tasks-container">
+        <div class="task-item">
+            <input type="text" name="Members[0]" placeholder="Member Name" class="form-control" required />
+        </div>
+    </div>
+    
     <h4>Tasks</h4>
     <div id="tasks-container">
         <div class="task-item">
