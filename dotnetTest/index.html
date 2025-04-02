@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const optionsDate = { year: 'numeric', month: 'long', day: 'numeric' };
+            const optionsTime = { hour: 'numeric', minute: 'numeric', hour12: true };
+            
+            document.getElementById("current-time").innerHTML = 
+                `<span class="date">${now.toLocaleDateString(undefined, optionsDate)}</span><br>
+                 <span class="time">${now.toLocaleTimeString(undefined, optionsTime)}</span>`;
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+    <!--<script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById("current-time").innerHTML = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000);
+    </script>-->
+</head>
+<body onload="updateDateTime()">
+    <div class="container">
+        <div class="left-column">
+            <h1>Welcome, Caroline!</h1>
+            <p>Current projects:</p>
+            
+            <button class="task-button">
+                <strong>TaskMaster Pro</strong><br>
+                <span class="due-date">Due date: March 26, 2025</span><br>
+                <span class="description">A productivity app that helps users organize, prioritize, and track their daily tasks with AI-powered suggestions and team collaboration features. </span>
+            <button class="task-button">
+                <strong>HealthTrack</strong><br>
+                <span class="due-date">Due date: April 2, 2025</span><br>
+                <span class="description">A fitness and wellness app that tracks workouts, nutrition, and sleep patterns while providing personalized health insights. </span>
+            </button>
+            <button class="task-button">
+            <strong>CodeCollab</strong><br>
+                <span class="due-date">Due date: September 16, 2025</span><br>
+                <span class="description"> A real-time collaborative code editor for developers, supporting multiple languages, version control, and live debugging.</span>
+            </button>
+            
+            <a href="#" class="go-to-projects">Go to projects  →</a>
+        
+        </div>
+        <div class="right-column">
+            <div class="date-time" id="current-time"></div>
+            <p>Current tasks:</p>
+            <div class="tasks">
+                <div class="task-item">
+                    <span>Design UI wireframes for the task dashboard.</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Develop an AI-based task prioritization algorithm.</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Set up Firebase for user data storage.</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Write automated tests for the calorie calculation logic.</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Implement dark/light mode UI toggling.</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Build a WebSocket-based real-time editing system.</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Write documentation for API endpoints</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Deploy the app on a cloud platform with load balancing.</span>
+                    <input type="checkbox">
+                </div>
+                <div class="task-item">
+                    <span>Optimize the app for offline mode.</span>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <span>➕ Add list item</span>
+                </div>
+            </div>
+            <a href="#" class="go-to-projects">Clear list</a>
+        </div>
+    </div>
+</body>
+</html>
