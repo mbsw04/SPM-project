@@ -4,42 +4,42 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/css/site.css" type="text/css" />
     <title>Test</title>
+    <h1 class="Head">My Projects</h1>
 </head>
 <div>
-    <h1>My Projects</h1>
-    <table>
-        <thead>
-        <tr>
-            <th>Project Name</th>
-            <th>Project Manager</th>
-            <th>Project Description</th>
-            <th>Tasks</th>
-            <th>Members</th>
-        </tr>
-        </thead>
         @foreach (var user in Model)
         {
-            <tr>
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><a href="">@user.ProjectName</a></h3>
+                    </div>
+                    <label>Project Manager</label>
+                    <div class ="card-body">
+                        <h6>@user.ProjectManagerName</h6>
+                    </div>
+                    <label>Project Description</label>
+                    <div class ="card-body">
+                        <p>@user.ProjectDescription</p>
+                    </div>
+                    <label>Tasks</label>
+                    <div class="card-body">
+                        @foreach (var task in @user.Tasks)
+                        {
+                            <li>@task</li>
+                        }
+                    </div>
+                    <label>Team Members</label>
+                    <div class="card-body">
+                        @foreach (var member in @user.Members)
+                        {
+                            <li>@member</li>
+                        }
+                    </div>
+                </div>
+            </div>
+                }
                 
-                <td><a href="">@user.ProjectName</a></td>
-                <td>@user.ProjectManagerName</td>
-                <td>@user.ProjectDescription</td>
-                <td>
-                    @foreach (var task in @user.Tasks)
-                    {
-                        <li>@task</li>
-                    }
-                </td>
-                <td>
-                    @foreach (var member in @user.Members)
-                    {
-                        <li>@member</li>
-                    }
-                </td>
-            </tr>
-        }
-    </table>
-</div>
-
+        </div>
 
 <a href="@Url.Action("Create", "Project")">Add Project</a>
