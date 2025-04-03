@@ -10,4 +10,10 @@
     <PackageReference Include="MongoDB.Driver" Version="3.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Views\Project\TeamInfo.cshtml.css">
+      <DependentUpon>TeamInfo.cshtml</DependentUpon>
+    </None>
+  </ItemGroup>
+
 </Project>

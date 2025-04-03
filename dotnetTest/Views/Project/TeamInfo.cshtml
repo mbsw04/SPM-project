@@ -6,7 +6,40 @@
     <title>Test</title>
 </head>
 <div>
-    <h1>Current Teams</h1>
+    <h1 class = "addMembers">Team Members</h1> <br>
+    <button type="button" onclick="window.location.href='https://www.google.com/search?q=kade+fleming&sca_esv=ba0413463e4e44e4&rlz=1C1VDKB_enUS965US966&udm=2&biw=1280&bih=559&sxsrf=AHTn8zoLfTWK92gC5La7XUgYGM03r5A0oQ%3A1743668269463&ei=LUTuZ-OGHIntkvQPgafviAQ&ved=0ahUKEwij0bq-truMAxWJtoQIHYHTG0EQ4dUDCBE&uact=5&oq=kade+fleming&gs_lp=EgNpbWciDGthZGUgZmxlbWluZzIHECMYJxjJAjIGEAAYBRgeSP8ZUN8IWN8IcAF4AJABAJgBNKABNKoBATG4AQPIAQD4AQGYAgGgAjmYAwCIBgGSBwExoAfHArIHATG4Bzk&sclient=img';" >Add Team Member</button> <br>
+    <table class="teamMemberTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Manager</th>
+            <th>Project(s)</th>
+        </tr>
+        </thead>
+        @foreach (var user in Model)
+        {
+            <tr>
+
+                <td><a href="">@user.ProjectName</a></td>
+                <td>@user.ProjectManagerName</td>
+                <td>
+                    @foreach (var task in @user.Tasks)
+                    {
+                        <li>@task</li>
+                    }
+                </td>
+                <td>
+                    @foreach (var member in @user.Members)
+                    {
+                        <li>@member</li>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+    <br>
+    <h1 class="members">Current Projects</h1> <br>
     <table>
         <thead>
         <tr>
