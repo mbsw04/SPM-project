@@ -78,7 +78,7 @@ namespace dotnetTest.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Register(string username, string email, string password)
+        public async Task<IActionResult> Register(string firstName, string lastName, string username, string email, string occupation, string password)
         {
             if (await _userRepository.GetByUsernameAsync(username) != null)
             {
@@ -94,8 +94,11 @@ namespace dotnetTest.Controllers
 
             var user = new User
             {
+                FirstName = firstName,
+                LastName = lastName,
                 Username = username,
                 Email = email,
+                Occupation = occupation,
                 PasswordHash = _userRepository.HashPassword(password)
             };
 

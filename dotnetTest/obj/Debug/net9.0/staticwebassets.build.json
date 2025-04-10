@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t2V7gAaCDhXoqnWBm4BISterYiv1CyDm5xxgulBYsDo=",
+  "Hash": "Z1et9/+ZkeuNPamWgLDoFPsqGiv85I1f2ByggApFO9g=",
   "Source": "dotnetTest",
   "BasePath": "_content/dotnetTest",
   "Mode": "Default",
@@ -395,12 +395,12 @@
       "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-tqxupkkcg1.gz",
+      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-76061nvnxe.gz",
       "SourceId": "dotnetTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/dotnetTest",
-      "RelativePath": "css/site#[.{fingerprint=tqxupkkcg1}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=76061nvnxe}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -409,8 +409,8 @@
       "RelatedAsset": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "vfduuav4iw",
-      "Integrity": "i9WuHn09k55MF1tThxr71i2nVOcjdsL3KWPDyZchL74=",
+      "Fingerprint": "3nlrcsw210",
+      "Integrity": "sV2vZVyZ8hqCnMo4Q0r97FvHcBjcmO6K+M6yRo8/Yw4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/site.css"
@@ -834,6 +834,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/bundle/dotnetTest.styles.css"
+    },
+    {
+      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-d5bs2prtgd.gz",
+      "SourceId": "dotnetTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/dotnetTest",
+      "RelativePath": "style#[.{fingerprint=d5bs2prtgd}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qoc1x22gv8",
+      "Integrity": "huDauS1U2mydiVFEUvt6ZO0gDm2Lm6lkd0SzEYVgsNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css"
     },
     {
       "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/lh22nlj168-pj5nd1wqec.gz",
@@ -1417,8 +1438,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tqxupkkcg1",
-      "Integrity": "qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA=",
+      "Fingerprint": "76061nvnxe",
+      "Integrity": "oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -2724,17 +2745,38 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
+      "SourceId": "dotnetTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/",
+      "BasePath": "_content/dotnetTest",
+      "RelativePath": "style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d5bs2prtgd",
+      "Integrity": "j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/style.css"
     }
   ],
   "Endpoints": [
     {
-      "Route": "css/site.css",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-tqxupkkcg1.gz",
+      "Route": "css/site.76061nvnxe.css",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-76061nvnxe.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001751313485"
+          "Quality": "0.001733102253"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2786,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "570"
+          "Value": "576"
         },
         {
           "Name": "ETag",
-          "Value": "\"i9WuHn09k55MF1tThxr71i2nVOcjdsL3KWPDyZchL74=\""
+          "Value": "\"sV2vZVyZ8hqCnMo4Q0r97FvHcBjcmO6K+M6yRo8/Yw4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 20:31:28 GMT"
+          "Value": "Thu, 10 Apr 2025 21:27:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,18 +2814,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA=\""
+          "Value": "W/\"oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "76061nvnxe"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA="
+          "Value": "sha256-oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA="
         }
       ]
     },
     {
-      "Route": "css/site.css",
+      "Route": "css/site.76061nvnxe.css",
       "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2793,7 +2843,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1428"
+          "Value": "1430"
         },
         {
           "Name": "Content-Type",
@@ -2801,121 +2851,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA=\""
+          "Value": "\"oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 20:31:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-tqxupkkcg1.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "570"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"i9WuHn09k55MF1tThxr71i2nVOcjdsL3KWPDyZchL74=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 20:31:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-i9WuHn09k55MF1tThxr71i2nVOcjdsL3KWPDyZchL74="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.tqxupkkcg1.css",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-tqxupkkcg1.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001751313485"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "570"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"i9WuHn09k55MF1tThxr71i2nVOcjdsL3KWPDyZchL74=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 20:31:28 GMT"
+          "Value": "Thu, 10 Apr 2025 21:27:37 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tqxupkkcg1"
+          "Value": "76061nvnxe"
         },
         {
           "Name": "label",
@@ -2923,13 +2873,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA="
+          "Value": "sha256-oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA="
         }
       ]
     },
     {
-      "Route": "css/site.tqxupkkcg1.css",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/site.css",
+      "Route": "css/site.76061nvnxe.css.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-76061nvnxe.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2938,7 +2888,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1428"
+          "Value": "576"
         },
         {
           "Name": "Content-Type",
@@ -2946,56 +2896,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA=\""
+          "Value": "\"sV2vZVyZ8hqCnMo4Q0r97FvHcBjcmO6K+M6yRo8/Yw4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 20:31:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tqxupkkcg1"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qzAYoQdW6ES9gKtGNONgrd47Dv8AGEoxvRGElHX4nJA="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.tqxupkkcg1.css.gz",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-tqxupkkcg1.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "570"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"i9WuHn09k55MF1tThxr71i2nVOcjdsL3KWPDyZchL74=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 20:31:28 GMT"
+          "Value": "Thu, 10 Apr 2025 21:27:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3013,7 +2918,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tqxupkkcg1"
+          "Value": "76061nvnxe"
         },
         {
           "Name": "label",
@@ -3021,7 +2926,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-i9WuHn09k55MF1tThxr71i2nVOcjdsL3KWPDyZchL74="
+          "Value": "sha256-sV2vZVyZ8hqCnMo4Q0r97FvHcBjcmO6K+M6yRo8/Yw4="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-76061nvnxe.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001733102253"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "576"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sV2vZVyZ8hqCnMo4Q0r97FvHcBjcmO6K+M6yRo8/Yw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:27:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:27:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-76061nvnxe.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sV2vZVyZ8hqCnMo4Q0r97FvHcBjcmO6K+M6yRo8/Yw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:27:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sV2vZVyZ8hqCnMo4Q0r97FvHcBjcmO6K+M6yRo8/Yw4="
         }
       ]
     },
@@ -3050,7 +3092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3103,7 +3145,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3140,7 +3182,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3187,7 +3229,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3240,7 +3282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3277,7 +3319,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3324,7 +3366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3385,7 +3427,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3430,7 +3472,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3485,7 +3527,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3546,7 +3588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3591,7 +3633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 00:38:58 GMT"
+          "Value": "Sat, 05 Apr 2025 17:14:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21878,6 +21920,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-F1wMlgb/juW08DFUssW6Pm9EBKfjXXRiSK0F5FgXxJU="
+        }
+      ]
+    },
+    {
+      "Route": "style.css",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-d5bs2prtgd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001483679525"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"huDauS1U2mydiVFEUvt6ZO0gDm2Lm6lkd0SzEYVgsNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:32:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc="
+        }
+      ]
+    },
+    {
+      "Route": "style.css",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:32:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc="
+        }
+      ]
+    },
+    {
+      "Route": "style.css.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-d5bs2prtgd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"huDauS1U2mydiVFEUvt6ZO0gDm2Lm6lkd0SzEYVgsNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:32:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-huDauS1U2mydiVFEUvt6ZO0gDm2Lm6lkd0SzEYVgsNQ="
+        }
+      ]
+    },
+    {
+      "Route": "style.d5bs2prtgd.css",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-d5bs2prtgd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001483679525"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"huDauS1U2mydiVFEUvt6ZO0gDm2Lm6lkd0SzEYVgsNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:32:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d5bs2prtgd"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc="
+        }
+      ]
+    },
+    {
+      "Route": "style.d5bs2prtgd.css",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:32:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d5bs2prtgd"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6IGM5TtboWHzlx12nIGnXl0DL7kDRw4Q++3Z0pOhUc="
+        }
+      ]
+    },
+    {
+      "Route": "style.d5bs2prtgd.css.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-d5bs2prtgd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"huDauS1U2mydiVFEUvt6ZO0gDm2Lm6lkd0SzEYVgsNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:32:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d5bs2prtgd"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-huDauS1U2mydiVFEUvt6ZO0gDm2Lm6lkd0SzEYVgsNQ="
         }
       ]
     }

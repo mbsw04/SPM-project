@@ -12,6 +12,8 @@ builder.Services.AddSingleton<MongoDbContext>();
 
 builder.Services.AddScoped<ProjectInfoRepository>();
 builder.Services.AddScoped<UserRepository>();
+builder.Services.AddHttpContextAccessor();
+
 
 // Add Authentication
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

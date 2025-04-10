@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
+      "PackagePath": "staticwebassets/style.css"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.dotnetTest.props",
       "PackagePath": "build\\dotnetTest.props"
     },

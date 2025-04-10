@@ -15,6 +15,7 @@
             <th>Project Description</th>
             <th>Tasks</th>
             <th>Members</th>
+            <th>Project Active</th>
         </tr>
         </thead>
         @foreach (var user in Model)
@@ -36,6 +37,7 @@
                         <li>@member</li>
                     }
                 </td>
+                <td>@user.ProjectActive</td>
             </tr>
         }
     </table>

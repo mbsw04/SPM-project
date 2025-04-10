@@ -12,12 +12,24 @@
                 <form asp-action="Register" method="post">
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required />
+                    </div>
+                    <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" class="form-control" id="username" name="username" required />
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" class="form-control" id="occupation" name="occupation" required />
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>

@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace dotnetTest.Models;
 
-public class Task
+public class Tasks
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]

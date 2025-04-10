@@ -47,8 +47,8 @@ td{
 /* Alternative color options - uncomment the one you want to use */
 /*
 .navbar-dark.bg-primary {
-    background-color: #0d47a1 !important; /* Dark Blue */
-}
+    background-color: #0d47a1 !important; /* Dark Blue 
+}*/
 
 .navbar-dark.bg-primary {
     background-color: #1976d2 !important; /* Material Blue */
@@ -65,4 +65,5 @@ td{
 .navbar-dark.bg-primary {
     background-color: #2c3e50 !important; /* Dark Blue-Gray */
 }
-*/
+
+

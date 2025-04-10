@@ -1,19 +1,26 @@
 using dotnetTest.Data;
 using dotnetTest.Models;
-
+using System.Security.Claims;
 namespace dotnetTest.Repositories;
 
 using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-public class ProjectInfoRepository(MongoDbContext context)
+public class ProjectInfoRepository(MongoDbContext context, UserRepository userRepository, IHttpContextAccessor httpContextAccessor)
 {
     private readonly IMongoCollection<ProjectInfo> _ProjectInfos = context.GetCollection<ProjectInfo>("Projects");
 
     public async Task<List<ProjectInfo>> GetAllProjectInfosAsync()
     {
-        return await _ProjectInfos.Find(_ => true).ToListAsync();
+        var user = httpContextAccessor.HttpContext?.User;
+        if (user == null)
+        {
+            throw new InvalidOperationException("No user is currently logged in.");
+        }
+        var userId = await userRepository.GetUserIdByUsernameAsync(user.Identity.Name);
+        Console.WriteLine("User ID:"+userId);
+        return await _ProjectInfos.Find(project => project.Id == userId).ToListAsync();
     }
 
     public async Task<ProjectInfo> GetProjectInfoByIdAsync(string id)

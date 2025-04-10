@@ -3,6 +3,7 @@ using dotnetTest.Models;
 using MongoDB.Driver;
 using System.Security.Cryptography;
 using System.Text;
+using MongoDB.Bson;
 
 namespace dotnetTest.Repositories
 {
@@ -43,5 +44,25 @@ namespace dotnetTest.Repositories
         {
             return HashPassword(password) == hash;
         }
+        
+        public async Task<String> GetUserIdByUsernameAsync(string username)
+        {
+            var user = await _users.Find(u => u.Username == username).FirstOrDefaultAsync();
+            if (user == null)
+            {
+                return "";
+            }
+
+            return user.Id; // returns the ObjectId of the user, or an empty ObjectId if no user is found
+        }
+
+        // Method to get ObjectId by email
+        /*
+        public async Task<ObjectId> GetUserIdByEmailAsync(string email)
+        {
+            var user = await _users.Find(u => u.Email == email).FirstOrDefaultAsync();
+            return user?.Id ?? ObjectId.Empty; // returns the ObjectId of the user, or an empty ObjectId if no user is found
+        }
+        */
     }
 } 
