@@ -1,0 +1,16 @@
+.welcome {
+    text-align: center;
+    padding-top: 50px;
+}
+.slogan{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+.card{
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.col-md-4{
+    padding-bottom: 100px;
+}
