@@ -15,6 +15,138 @@
 .col-md-4[b-jvxuxn8277]{
     padding-bottom: 100px;
 }
+/* _content/dotnetTest/Views/Home/Index.cshtml.rz.scp.css */
+body[b-8xpjk1oclx] {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8fc;
+}
+.container[b-8xpjk1oclx] {
+    display: flex;
+    max-width: 1090px;
+    margin: auto;
+    gap: 90px;
+    align-items: flex-start; /* Ensures both columns align at the same vertical level */
+}
+.left-column[b-8xpjk1oclx], .right-column[b-8xpjk1oclx] {
+    flex: 1;
+    justify-content: center;
+    /*align-items: left;*/
+}
+h1[b-8xpjk1oclx] {
+    font-family: 'Montserrat';font-size: 48px;
+    color: #1a1a6d;
+}
+.task-button[b-8xpjk1oclx] {
+    font-family: 'Montserrat';font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #d9d9e8;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.task-button .due-date[b-8xpjk1oclx] {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+.task-button .description[b-8xpjk1oclx] {
+    font-size: 14px;
+    color: #555;
+}
+.add-project[b-8xpjk1oclx] {
+    font-family: 'Montserrat';font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: #1a1a6d;
+    font-weight: bold;
+}
+.add-project span[b-8xpjk1oclx] {
+    font-family: 'Montserrat';font-size: 22px;
+    margin-left: 10px;
+}
+.go-to-projects[b-8xpjk1oclx] {
+    font-family: 'Montserrat';font-size: 17px;
+    display: block;
+    width: fit-content;
+    background-color: #1a1a6d;
+    color: white;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.date-time[b-8xpjk1oclx] {
+    padding-top: 40px;
+    font-family: 'Montserrat';font-size: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a6d;
+    margin-bottom: 32px;
+    text-align: right;
+}
+.date-time .date[b-8xpjk1oclx] {
+    /*display: block;*/
+    font-size: 20px; /* Larger date text */
+}
+
+.date-time .time[b-8xpjk1oclx] {
+    /*display: block;*/
+    font-size: 20px; /* Larger time text */
+}
+.tasks[b-8xpjk1oclx] {
+    font-family: 'Montserrat';font-size: 22px;
+    background-color: #d9d9e8;
+    padding: 15px;
+    border-radius: 10px;
+}
+.task-item[b-8xpjk1oclx] {
+    font-family: 'Montserrat';font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.task-item input[type="checkbox"][b-8xpjk1oclx] {
+    width: 20px;
+    height: 20px;
+    accent-color: #1a1a6d;
+}
+/* _content/dotnetTest/Views/Project/Index.cshtml.rz.scp.css */
+.Head[b-ijao27r5lb]{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card[b-ijao27r5lb]{
+    text-align: center;
+    background-color: #d8d8ff;
+    border-radius: 20px;
+    border: 5px solid #1a237e;
+    opacity: 75%
+}
+.card:hover[b-ijao27r5lb]{
+    opacity: 1;
+}
+label[b-ijao27r5lb]{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container[b-ijao27r5lb]{
+    display: inline-block;
+    width: 49%;
+    horiz-align: left;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 /* _content/dotnetTest/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

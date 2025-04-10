@@ -209,5 +209,7 @@
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-76061nvnxe.gz
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Account/Login.cshtml.rz.scp.css
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-tti36a52k5.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-upvpnrf89q.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-upvpnrf89q.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Home/Index.cshtml.rz.scp.css
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Project/Index.cshtml.rz.scp.css
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-yx216o51ef.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-yx216o51ef.gz
