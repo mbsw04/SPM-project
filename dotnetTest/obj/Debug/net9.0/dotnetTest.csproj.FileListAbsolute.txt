@@ -191,8 +191,6 @@
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/4ldek6f4ua-muycvpuwrr.gz
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/61d60b6qzp-87fc7y1x7t.gz
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/7wld29gy56-mlv21k5csn.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-ukl65x6yby.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-ukl65x6yby.gz
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/staticwebassets.build.json
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/staticwebassets.development.json
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -209,4 +207,7 @@
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/dotnetTest.genruntimeconfig.cache
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/ref/dotnetTest.dll
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-76061nvnxe.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-d5bs2prtgd.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Account/Login.cshtml.rz.scp.css
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/l6pg6qcrg2-tti36a52k5.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-upvpnrf89q.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-upvpnrf89q.gz
