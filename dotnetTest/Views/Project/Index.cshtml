@@ -2,6 +2,9 @@
 @{
     ViewData["Title"] = "My Projects";
 }
+<head>
+    <h2 class="welcome">@User.Identity.Name's Projects</h2>
+</head>
 
 <div>
     @foreach (var user in Model)
@@ -9,16 +12,18 @@
         <div class="container">
             <div class="card">
                 <div class="card-header">
-                    <h3><a href="">@user.ProjectName</a></h3>
+                    <h3><a class="proj" href="">@user.ProjectName</a></h3>
                 </div>
                 <label>Project Manager</label>
                 <div class="card-body">
                     <h6>@user.ProjectManagerName</h6>
                 </div>
+                <hr class="dash">
                 <label>Project Description</label>
                 <div class="card-body">
                     <p>@user.ProjectDescription</p>
                 </div>
+                <hr class="dash">
                 <label>Tasks</label>
                 <div class="card-body">
                     @foreach (var task in @user.Tasks)
@@ -26,6 +31,7 @@
                         <li>@task</li>
                     }
                 </div>
+                <hr class="dash">
                 <label>Team Members</label>
                 <div class="card-body">
                     @foreach (var member in @user.Members)
@@ -38,4 +44,4 @@
     }
 </div>
 
-<a href="@Url.Action("Create", "Project")">Add Project</a>
+<a class="createBtn" href="@Url.Action("Create", "Project")">New Project</a>
