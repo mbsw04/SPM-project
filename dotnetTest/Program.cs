@@ -6,6 +6,14 @@ using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure Kestrel
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    // Get PORT from environment variable or use default 10000
+    var port = int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "10000");
+    serverOptions.ListenAnyIP(port); // Bind to 0.0.0.0:PORT
+});
+
 // Load .env file only in Development
 if (builder.Environment.IsDevelopment())
 {
