@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/oldFavicon.ico",
+      "PackagePath": "staticwebassets/oldFavicon.ico"
+    },
+    {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
       "PackagePath": "staticwebassets/style.css"
     },

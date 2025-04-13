@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PjxICgclpEf+PWruofTyeQbvmC5TG+PhtNuo+CpubaM=",
+  "Hash": "gG6VMRDtYvPXaL8QCuv92qfk4PPZWy+pphppIJ3Cm0U=",
   "Source": "dotnetTest",
   "BasePath": "_content/dotnetTest",
   "Mode": "Default",
@@ -227,12 +227,12 @@
       "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/lib/jquery/dist/jquery.slim.min.map"
     },
     {
-      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-61n19gt1b8.gz",
+      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-1r3ax8m4ww.gz",
       "SourceId": "dotnetTest",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/dotnetTest",
-      "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
+      "RelativePath": "favicon#[.{fingerprint=1r3ax8m4ww}]?.ico.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -241,8 +241,8 @@
       "RelatedAsset": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jefwejb9ld",
-      "Integrity": "+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=",
+      "Fingerprint": "qa2l3dugtf",
+      "Integrity": "HuqoOxIuSmSzYiM+AhvXBKTlrLQzpAV44psRi5LhOxU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/favicon.ico"
@@ -561,6 +561,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/dxymgkv14h-61n19gt1b8.gz",
+      "SourceId": "dotnetTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/dotnetTest",
+      "RelativePath": "oldFavicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/oldFavicon.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jefwejb9ld",
+      "Integrity": "+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/oldFavicon.ico"
     },
     {
       "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/e1qja9spnd-37tfw0ft22.gz",
@@ -1459,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "1r3ax8m4ww",
+      "Integrity": "g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
@@ -2747,6 +2768,27 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
     },
     {
+      "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/oldFavicon.ico",
+      "SourceId": "dotnetTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/",
+      "BasePath": "_content/dotnetTest",
+      "RelativePath": "oldFavicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/oldFavicon.ico"
+    },
+    {
       "Identity": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
       "SourceId": "dotnetTest",
       "SourceType": "Discovered",
@@ -3706,13 +3748,13 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-61n19gt1b8.gz",
+      "Route": "favicon.1r3ax8m4ww.ico",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-1r3ax8m4ww.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000405022276"
+          "Quality": "0.000122294240"
         }
       ],
       "ResponseHeaders": [
@@ -3722,15 +3764,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "8176"
         },
         {
           "Name": "ETag",
-          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+          "Value": "\"HuqoOxIuSmSzYiM+AhvXBKTlrLQzpAV44psRi5LhOxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+          "Value": "Sun, 13 Apr 2025 02:03:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3750,13 +3792,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "W/\"g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "1r3ax8m4ww"
         },
         {
           "Name": "label",
@@ -3764,12 +3806,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco="
         }
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
+      "Route": "favicon.1r3ax8m4ww.ico",
       "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3779,7 +3821,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "8223"
         },
         {
           "Name": "Content-Type",
@@ -3787,11 +3829,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+          "Value": "Sun, 13 Apr 2025 02:03:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3801,7 +3843,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "1r3ax8m4ww"
         },
         {
           "Name": "label",
@@ -3809,13 +3851,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco="
         }
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-61n19gt1b8.gz",
+      "Route": "favicon.1r3ax8m4ww.ico.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-1r3ax8m4ww.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3824,7 +3866,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "8176"
         },
         {
           "Name": "Content-Type",
@@ -3832,11 +3874,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+          "Value": "\"HuqoOxIuSmSzYiM+AhvXBKTlrLQzpAV44psRi5LhOxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+          "Value": "Sun, 13 Apr 2025 02:03:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3854,7 +3896,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "1r3ax8m4ww"
         },
         {
           "Name": "label",
@@ -3862,18 +3904,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4="
+          "Value": "sha256-HuqoOxIuSmSzYiM+AhvXBKTlrLQzpAV44psRi5LhOxU="
         }
       ]
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-61n19gt1b8.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-1r3ax8m4ww.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000405022276"
+          "Quality": "0.000122294240"
         }
       ],
       "ResponseHeaders": [
@@ -3883,15 +3925,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "8176"
         },
         {
           "Name": "ETag",
-          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+          "Value": "\"HuqoOxIuSmSzYiM+AhvXBKTlrLQzpAV44psRi5LhOxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+          "Value": "Sun, 13 Apr 2025 02:03:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3911,13 +3953,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "W/\"g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco="
         }
       ]
     },
@@ -3932,7 +3974,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "8223"
         },
         {
           "Name": "Content-Type",
@@ -3940,11 +3982,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+          "Value": "Sun, 13 Apr 2025 02:03:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3954,13 +3996,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-g43xWRDvZjaCMiv8cKVwVulgfiPa78yWzBgFqikcEco="
         }
       ]
     },
     {
       "Route": "favicon.ico.gz",
-      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-61n19gt1b8.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-1r3ax8m4ww.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3969,7 +4011,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "8176"
         },
         {
           "Name": "Content-Type",
@@ -3977,11 +4019,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+          "Value": "\"HuqoOxIuSmSzYiM+AhvXBKTlrLQzpAV44psRi5LhOxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+          "Value": "Sun, 13 Apr 2025 02:03:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3999,7 +4041,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4="
+          "Value": "sha256-HuqoOxIuSmSzYiM+AhvXBKTlrLQzpAV44psRi5LhOxU="
         }
       ]
     },
@@ -21962,6 +22004,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-F1wMlgb/juW08DFUssW6Pm9EBKfjXXRiSK0F5FgXxJU="
+        }
+      ]
+    },
+    {
+      "Route": "oldFavicon.61n19gt1b8.ico",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/dxymgkv14h-61n19gt1b8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000405022276"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "oldFavicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "oldFavicon.61n19gt1b8.ico",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/oldFavicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "oldFavicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "oldFavicon.61n19gt1b8.ico.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/dxymgkv14h-61n19gt1b8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "oldFavicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4="
+        }
+      ]
+    },
+    {
+      "Route": "oldFavicon.ico",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/dxymgkv14h-61n19gt1b8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000405022276"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "oldFavicon.ico",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/oldFavicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "oldFavicon.ico.gz",
+      "AssetFile": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/dxymgkv14h-61n19gt1b8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Feb 2025 21:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+/824NtfTA0L7Mr42Fo+86YJP4R5cigdi9S7Fx5VVl4="
         }
       ]
     },
