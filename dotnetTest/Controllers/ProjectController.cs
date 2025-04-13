@@ -7,21 +7,32 @@ namespace dotnetTest.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-public class ProjectController(ProjectInfoRepository projectInfoRepository, UserRepository userRepository) : Controller
+public class ProjectController : BaseController
 {
+    private readonly ProjectInfoRepository _projectInfoRepository;
+
+    public ProjectController(ProjectInfoRepository projectInfoRepository, UserRepository userRepository)
+        : base(userRepository)
+    {
+        _projectInfoRepository = projectInfoRepository;
+    }
+
     public async Task<IActionResult> Index()
     {
-        var projects = await projectInfoRepository.GetAllProjectInfosAsync();
+        var projects = await _projectInfoRepository.GetAllProjectInfosAsync();
+        ViewBag.ProfilePhotoUrl = await GetUserProfilePhoto();
         return View(projects);
     }
+
     public async Task<IActionResult> TeamInfo()
     {
-        var projects = await projectInfoRepository.GetAllProjectInfosAsync();
+        var projects = await _projectInfoRepository.GetAllProjectInfosAsync();
         return View(projects);
     }
+
     public async Task<IActionResult> Reports()
     {
-        var projects = await projectInfoRepository.GetAllProjectInfosAsync();
+        var projects = await _projectInfoRepository.GetAllProjectInfosAsync();
         return View(projects);
     }
 
@@ -30,37 +41,26 @@ public class ProjectController(ProjectInfoRepository projectInfoRepository, User
     [HttpPost]
     public async Task<IActionResult> Create(ProjectInfo project)
     {
-        /*
-        foreach (var claim in User.Claims)
-        {
-            Console.WriteLine($"CLAIM TYPE: {claim.Type}, VALUE: {claim.Value}");
-        }
-        */
         project.ProjectActive = true;
-        var userId = await userRepository.GetUserIdByUsernameAsync(User.Identity.Name);
+        var userId = await _userRepository.GetUserIdByUsernameAsync(User.Identity.Name);
         if (string.IsNullOrEmpty(userId))
         {
-            // Handle case where userId could not be found.
             Console.WriteLine("User ID could not be found for the current user.");
-            return View(project); // Or handle appropriately.
+            return View(project);
         }
-        Console.WriteLine("ID Is: " + userId);
-        Console.WriteLine("User ID Before:" +project.Id);
         project.Id = userId;
         
-        Console.WriteLine("User ID After:" +project.Id);
-        
-        if (project.Tasks == null || project.Tasks.Count == 0)
+        if (project.Tasks == null)
         {
-            ModelState.AddModelError("Tasks", "At least one task is required.");
+            project.Tasks = new List<Tasks>();
         }
+        
         if (ModelState.IsValid)
         {
-            Console.WriteLine("Success: "+ project.ToString());
-            await projectInfoRepository.CreateProjectInfoAsync(project);
-            //projectInfoRepository.AddProject(project);
+            await _projectInfoRepository.CreateProjectInfoAsync(project);
             return RedirectToAction("Index");
         }
+        
         foreach (var key in ModelState.Keys)
         {
             var errors = ModelState[key].Errors;
@@ -69,22 +69,35 @@ public class ProjectController(ProjectInfoRepository projectInfoRepository, User
                 Console.WriteLine($"Validation error in {key}: {error.ErrorMessage}");
             }
         }
-        Console.WriteLine("Error: "+ project.ToString());
         
         return View(project);
     }
-    
-    /*
-     [HttpPost]
-    public IActionResult Create(ProjectInfo project)
+
+    [HttpGet]
+    public IActionResult AddTask(string projectId)
+    {
+        ViewBag.ProjectId = projectId;
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddTask(Tasks task)
     {
         if (ModelState.IsValid)
         {
-            //await projectInfoRepository.CreateProjectInfoAsync(project);
-            projectInfoRepository.AddProject(project);
-            return RedirectToAction("Index");
+            task.TaskActive = true;
+            var project = await _projectInfoRepository.GetProjectInfoByIdAsync(task.ProjectId);
+            if (project != null)
+            {
+                if (project.Tasks == null)
+                {
+                    project.Tasks = new List<Tasks>();
+                }
+                project.Tasks.Add(task);
+                await _projectInfoRepository.UpdateProjectInfoAsync(task.ProjectId, project);
+                return RedirectToAction("Index");
+            }
         }
-        return View(project);
+        return View(task);
     }
-    */
 }

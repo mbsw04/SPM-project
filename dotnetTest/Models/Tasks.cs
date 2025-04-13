@@ -13,13 +13,12 @@ public class Tasks
     
     public string? ProjectId { get; set; }
     
-    [Required]
-    public string TaskDescription  { get; set; }
+    public string? TaskDescription  { get; set; }
     
-    [Required]
-    public string TaskDueDate  { get; set; }
+    public string? TaskDueDate  { get; set; }
     
-    [Required]
-    public bool TaskActive { get; set; }
+    public bool? TaskActive { get; set; }
+    
+    public string? AssignedTo { get; set; }
 
 }

@@ -124,6 +124,7 @@ h1[b-8xpjk1oclx] {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: -10px;
 }
 .proj[b-ijao27r5lb]{
     text-transform: capitalize;
@@ -132,6 +133,7 @@ h1[b-8xpjk1oclx] {
     text-decoration: none;
 }
 .card[b-ijao27r5lb] {
+    
     text-align: center;
     background-color: #d8d8ff;
     border-radius: 20px;
@@ -161,7 +163,6 @@ label[b-ijao27r5lb] {
 }
 .createBtn[b-ijao27r5lb]{
     display: inline-block;
-    float: right;
     background-color: #1E1B75;
     color: #fff;
     padding: 10px 20px;
@@ -170,6 +171,10 @@ label[b-ijao27r5lb] {
 }
 .createBtn:hover[b-ijao27r5lb]{
     background-color: #1F1FFF;
+}
+
+.profile-photo[b-ijao27r5lb]{
+    width: 10%;
 }
 /* _content/dotnetTest/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification

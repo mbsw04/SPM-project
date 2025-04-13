@@ -12,29 +12,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>76061nvnxe</Fingerprint>
-      <Integrity>oax5YNasBObnljWs4ACR97+f6/2Af6akGzgA29pGoGA=</Integrity>
+      <Fingerprint>rmthgmfga4</Fingerprint>
+      <Integrity>Q8hAicud/1Neil8cDGJS3r5qLswa6N+V1SyIowHXcgY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.sd2ez9u8m5.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.s9j7a802q3.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>dotnetTest</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/dotnetTest</BasePath>
-      <RelativePath>dotnetTest.sd2ez9u8m5.bundle.scp.css</RelativePath>
+      <RelativePath>dotnetTest.s9j7a802q3.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>sd2ez9u8m5</Fingerprint>
-      <Integrity>cFVlv1Bjn6X6pGewlJCRnexXLCxMfkj5bFH+b2VJ7pE=</Integrity>
+      <Fingerprint>s9j7a802q3</Fingerprint>
+      <Integrity>sLjyEWkeAmLQw4NW/qIVA/ENiz6JA16FcQumyy2nN+w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.sd2ez9u8m5.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.s9j7a802q3.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>
@@ -1169,6 +1169,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\style.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profile-photos\frostyYuhh-7f7d8220-d2fe-4240-b36f-1547553fde6b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>dotnetTest</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/dotnetTest</BasePath>
+      <RelativePath>uploads/profile-photos/frostyYuhh-7f7d8220-d2fe-4240-b36f-1547553fde6b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>v29hlwm0o5</Fingerprint>
+      <Integrity>N11ir55RgTZAiEMuzkYX5s3KnFm/jOBo+1n56/9B1a0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profile-photos\frostyYuhh-7f7d8220-d2fe-4240-b36f-1547553fde6b.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profile-photos\test12-d94693ca-35ff-4046-bd6e-48bcd9370e10.jpg'))">
       <SourceType>Package</SourceType>

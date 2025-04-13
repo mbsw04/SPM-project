@@ -2,10 +2,26 @@
 @{
     ViewData["Title"] = "My Projects";
 }
-<head>
-    <h2 class="welcome">@User.Identity.Name's Projects</h2>
-</head>
 
+<div class="text-center mb-4">
+    <div class="profile-photo-container">
+        @if (!string.IsNullOrEmpty(ViewBag.ProfilePhotoUrl))
+        {
+            <img src="@ViewBag.ProfilePhotoUrl" alt="Profile Photo" class="profile-photo rounded-circle" />
+        }
+        else
+        {
+            <div class="profile-photo-placeholder rounded-circle">
+                <i class="bi bi-person-circle" style="font-size: 5rem; color: #6c757d;"></i>
+            </div>
+        }
+    </div>
+    <h2 class="welcome mt-3">@User.Identity.Name's Projects</h2>
+</div>
+
+<div class="text-center mt-4">
+    <a class="createBtn" href="@Url.Action("Create", "Project")">New Project</a>
+</div>
 <div>
     @foreach (var user in Model)
     {
@@ -28,8 +44,11 @@
                 <div class="card-body">
                     @foreach (var task in @user.Tasks)
                     {
-                        <li>@task</li>
+                        <li>@task.TaskDescription - Due: @task.TaskDueDate</li>
                     }
+                </div>
+                <div class="card-body">
+                    <a href="@Url.Action("AddTask", "Project", new { projectId = user.ProjectId })" class="btn btn-primary">Add Task</a>
                 </div>
                 <hr class="dash">
                 <label>Team Members</label>
@@ -44,4 +63,4 @@
     }
 </div>
 
-<a class="createBtn" href="@Url.Action("Create", "Project")">New Project</a>
+

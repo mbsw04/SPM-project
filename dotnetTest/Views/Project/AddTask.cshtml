@@ -1,0 +1,39 @@
+@model dotnetTest.Models.Tasks
+
+@{
+    ViewData["Title"] = "Add Task";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h2>Add New Task</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="AddTask" method="post">
+                <input type="hidden" asp-for="ProjectId" value="@ViewBag.ProjectId" />
+                
+                <div class="form-group mb-3">
+                    <label asp-for="TaskDescription" class="control-label">Task Description</label>
+                    <input asp-for="TaskDescription" class="form-control" required />
+                    <span asp-validation-for="TaskDescription" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="TaskDueDate" class="control-label">Due Date</label>
+                    <input asp-for="TaskDueDate" class="form-control" type="date" required />
+                    <span asp-validation-for="TaskDueDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                    <a asp-action="Index" class="btn btn-secondary">Back to Projects</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

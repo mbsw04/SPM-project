@@ -57,13 +57,18 @@ namespace dotnetTest.Repositories
         }
 
         // Method to get ObjectId by email
-        /*
-        public async Task<ObjectId> GetUserIdByEmailAsync(string email)
+        
+        public async Task<String> GetUserIdByEmailAsync(string email)
         {
             var user = await _users.Find(u => u.Email == email).FirstOrDefaultAsync();
-            return user?.Id ?? ObjectId.Empty; // returns the ObjectId of the user, or an empty ObjectId if no user is found
+            if (user == null)
+            {
+                return "";
+            }
+
+            return user.Id;
         }
-        */
+        
 
         public async Task UpdateUserAsync(User user)
         {

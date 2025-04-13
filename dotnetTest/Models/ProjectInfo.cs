@@ -34,7 +34,7 @@ public class ProjectInfo
     [Required]  // Ensures at least one task is provided
     [MinLength(1, ErrorMessage = "At least one task is required.")]
     */
-    public List<string> Tasks { get; set; }
+    public List<Tasks>? Tasks { get; set; }
     
     /*
     [Required]  // Ensures at least one task is provided
