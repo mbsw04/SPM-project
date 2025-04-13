@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/projectbundle/dotnetTest.bundle.scp.css",
-      "PackagePath": "staticwebassets/dotnetTest.yx216o51ef.bundle.scp.css"
+      "PackagePath": "staticwebassets/dotnetTest.sd2ez9u8m5.bundle.scp.css"
     },
     {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/site.css",
@@ -259,6 +259,10 @@
     {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/style.css",
       "PackagePath": "staticwebassets/style.css"
+    },
+    {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/uploads/profile-photos/test12-d94693ca-35ff-4046-bd6e-48bcd9370e10.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-photos/test12-d94693ca-35ff-4046-bd6e-48bcd9370e10.jpg"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.dotnetTest.props",

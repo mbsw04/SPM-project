@@ -64,5 +64,11 @@ namespace dotnetTest.Repositories
             return user?.Id ?? ObjectId.Empty; // returns the ObjectId of the user, or an empty ObjectId if no user is found
         }
         */
+
+        public async Task UpdateUserAsync(User user)
+        {
+            var filter = Builders<User>.Filter.Eq(u => u.Id, user.Id);
+            await _users.ReplaceOneAsync(filter, user);
+        }
     }
 } 

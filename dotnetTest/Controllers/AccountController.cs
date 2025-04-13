@@ -5,16 +5,21 @@ using System.Security.Claims;
 using dotnetTest.Models;
 using dotnetTest.Repositories;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace dotnetTest.Controllers
 {
     public class AccountController : Controller
     {
         private readonly UserRepository _userRepository;
+        private readonly IWebHostEnvironment _environment;
 
-        public AccountController(UserRepository userRepository)
+        public AccountController(UserRepository userRepository, IWebHostEnvironment environment)
         {
             _userRepository = userRepository;
+            _environment = environment;
         }
 
         [AllowAnonymous]
@@ -134,6 +139,62 @@ namespace dotnetTest.Controllers
         public IActionResult AccessDenied()
         {
             return View();
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> UploadProfilePhoto(IFormFile photo)
+        {
+            if (photo == null || photo.Length == 0)
+            {
+                return BadRequest("No file uploaded");
+            }
+
+            // Validate file type
+            var allowedTypes = new[] { "image/jpeg", "image/png", "image/gif" };
+            if (!allowedTypes.Contains(photo.ContentType.ToLower()))
+            {
+                return BadRequest("Invalid file type. Please upload a JPEG, PNG, or GIF image.");
+            }
+
+            // Create uploads directory if it doesn't exist
+            var uploadsDir = Path.Combine(_environment.WebRootPath, "uploads", "profile-photos");
+            if (!Directory.Exists(uploadsDir))
+            {
+                Directory.CreateDirectory(uploadsDir);
+            }
+
+            // Generate unique filename
+            var fileName = $"{User.Identity.Name}-{Guid.NewGuid()}{Path.GetExtension(photo.FileName)}";
+            var filePath = Path.Combine(uploadsDir, fileName);
+
+            // Save the file
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await photo.CopyToAsync(stream);
+            }
+
+            // Update user's profile photo URL in database
+            var user = await _userRepository.GetByUsernameAsync(User.Identity.Name);
+            if (user != null)
+            {
+                user.ProfilePhotoUrl = $"/uploads/profile-photos/{fileName}";
+                await _userRepository.UpdateUserAsync(user);
+            }
+
+            return RedirectToAction("Profile", "Account");
+        }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var user = await _userRepository.GetByUsernameAsync(User.Identity.Name);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
         }
     }
 } 

@@ -25,6 +25,9 @@ namespace dotnetTest.Models
         [BsonElement("passwordHash")]
         public string PasswordHash { get; set; }
 
+        [BsonElement("profilePhotoUrl")]
+        public string? ProfilePhotoUrl { get; set; }
+
         [BsonElement("createdAt")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
