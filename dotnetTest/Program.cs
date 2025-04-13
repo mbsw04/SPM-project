@@ -2,8 +2,12 @@ using dotnetTest.Data;
 using dotnetTest.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Load environment variables from .env file
+Env.Load();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
