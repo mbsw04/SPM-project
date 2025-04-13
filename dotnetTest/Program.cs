@@ -6,8 +6,11 @@ using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Load environment variables from .env file
-Env.Load();
+// Load .env file only in Development
+if (builder.Environment.IsDevelopment())
+{
+    Env.Load();
+}
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -18,7 +21,6 @@ builder.Services.AddScoped<ProjectInfoRepository>();
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddHttpContextAccessor();
 
-
 // Add Authentication
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
@@ -26,6 +28,9 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Account/Login";
         options.LogoutPath = "/Account/Logout";
         options.AccessDeniedPath = "/Account/AccessDenied";
+        // Add cookie expiration time
+        options.ExpireTimeSpan = TimeSpan.FromHours(24);
+        options.SlidingExpiration = true;
     });
 
 // Add Authorization with default policy requiring authentication
