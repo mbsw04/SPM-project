@@ -74,12 +74,36 @@ builder.Services.AddAuthorization(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage(); // Show detailed errors in development
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+// Add global error handling
+app.Use(async (context, next) =>
+{
+    try
+    {
+        await next();
+    }
+    catch (Exception ex)
+    {
+        var logger = context.RequestServices.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An unhandled exception occurred.");
+
+        if (app.Environment.IsDevelopment())
+        {
+            throw; // Re-throw in development to show detailed error page
+        }
+
+        context.Response.Redirect("/Home/Error");
+    }
+});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
