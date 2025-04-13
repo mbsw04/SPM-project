@@ -28,17 +28,39 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Account/Login";
         options.LogoutPath = "/Account/Logout";
         options.AccessDeniedPath = "/Account/AccessDenied";
-        // Add cookie expiration time
         options.ExpireTimeSpan = TimeSpan.FromHours(24);
         options.SlidingExpiration = true;
+        // Prevent redirect loops
+        options.Events = new CookieAuthenticationEvents
+        {
+            OnRedirectToLogin = context =>
+            {
+                // Don't redirect to login if it's an API request or Error page
+                if (context.Request.Path.StartsWithSegments("/Home/Error") || 
+                    context.Request.Path.StartsWithSegments("/api"))
+                {
+                    context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                    return Task.CompletedTask;
+                }
+                context.Response.Redirect(context.RedirectUri);
+                return Task.CompletedTask;
+            }
+        };
     });
 
 // Add Authorization with default policy requiring authentication
 builder.Services.AddAuthorization(options =>
 {
+    // Set default policy
     options.FallbackPolicy = new AuthorizationPolicyBuilder()
         .RequireAuthenticatedUser()
         .Build();
+
+    // Add policy for Error page to allow anonymous access
+    options.AddPolicy("AllowAnonymous", policy =>
+    {
+        policy.RequireAssertion(context => true);
+    });
 });
 
 var app = builder.Build();
@@ -57,6 +79,13 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Map routes with specific authorization policies
+app.MapControllerRoute(
+    name: "error",
+    pattern: "Home/Error",
+    defaults: new { controller = "Home", action = "Error" })
+    .AllowAnonymous();
 
 app.MapControllerRoute(
     name: "default",

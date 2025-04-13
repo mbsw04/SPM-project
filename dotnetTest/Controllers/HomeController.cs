@@ -25,9 +25,24 @@ public class HomeController : Controller
         return View();
     }
 
+    [AllowAnonymous]
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    public IActionResult Error(string returnUrl = null)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        _logger.LogError("An error occurred. ReturnUrl: {ReturnUrl}", returnUrl);
+        
+        // Clear any problematic return URLs to prevent redirect loops
+        if (returnUrl?.Contains("/Home/Error") == true)
+        {
+            returnUrl = null;
+        }
+
+        var errorModel = new ErrorViewModel 
+        { 
+            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier,
+            ReturnUrl = returnUrl
+        };
+        
+        return View(errorModel);
     }
 }
