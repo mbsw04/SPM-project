@@ -1,19 +1,38 @@
-@page
-@model dotnetTest.Views.Project.Search
-
+@model dotnetTest.Models.SearchViewModel
 @{
-    Layout = null;
+    ViewData["Title"] = "Search";
 }
 
-<!DOCTYPE html>
+<div class="container">
+    <form asp-controller="Project" asp-action="Search" method="get">
+        <div class="input-group mb-4">
+            <input type="text" name="searchTerm" class="form-control" placeholder="Search users..." value="@Model?.SearchTerm">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </div>
+    </form>
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
+    @if (Model?.SearchTerm != null)
+    {
+        <h2>Search Results for "@Model.SearchTerm"</h2>
+
+        @if (Model.Results == null || !Model.Results.Any())
+        {
+            <p>No results found.</p>
+        }
+        else
+        {
+            <div class="list-group">
+                @foreach (var result in Model.Results)
+                {
+                    <a href="@Url.Action("Details", new { id = result.Id })" class="list-group-item list-group-item-action">
+                        <img class="profile-photo rounded-circle" src="@result.ProfilePhotoUrl" alt="">
+                        <h5>@result.Username</h5>
+                        <p>@result.Occupation</p>
+                    </a>
+                }
+            </div>
+        }
+    }
 </div>
-</body>
-</html>

@@ -31,6 +31,11 @@ public class ProjectInfo
     public List<string> Members  { get; set; } 
     
     /*
+    public List<string> FunctionalRequirements  { get; set; }
+    public List<string> NonFunctionalRequirements  { get; set; }
+    */
+    
+    /*
     [Required]  // Ensures at least one task is provided
     [MinLength(1, ErrorMessage = "At least one task is required.")]
     */

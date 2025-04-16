@@ -100,4 +100,26 @@ public class ProjectController : BaseController
         }
         return View(task);
     }
+    
+    
+    public async Task<IActionResult> Search(string searchTerm)
+    {
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            return View(new SearchViewModel
+            {
+                Results = new List<User>()
+            });
+        }
+        
+        var results = await _userRepository.SearchAsync(searchTerm);
+    
+        var viewModel = new SearchViewModel
+        {
+            SearchTerm = searchTerm,
+            Results = results.ToList()
+        };
+    
+        return View(viewModel);
+    }
 }

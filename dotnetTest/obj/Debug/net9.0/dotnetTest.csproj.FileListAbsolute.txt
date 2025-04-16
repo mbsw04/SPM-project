@@ -210,9 +210,9 @@
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Home/Index.cshtml.rz.scp.css
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Project/Index.cshtml.rz.scp.css
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/9hkyqf51xw-rmthgmfga4.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-s9j7a802q3.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-s9j7a802q3.gz
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/6ljkox8ly8-1r3ax8m4ww.gz
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/dxymgkv14h-61n19gt1b8.gz
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/bin/Debug/net9.0/DotNetEnv.dll
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/bin/Debug/net9.0/Sprache.dll
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-c7caxqt72s.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-c7caxqt72s.gz

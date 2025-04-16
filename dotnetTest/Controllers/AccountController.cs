@@ -42,6 +42,10 @@ namespace dotnetTest.Controllers
             ViewData["ReturnUrl"] = returnUrl;
 
             var user = await _userRepository.GetByUsernameAsync(username);
+            if (user == null)
+            {
+                user = await _userRepository.GetByEmailAsync(username);
+            }
             if (user != null && _userRepository.VerifyPassword(password, user.PasswordHash))
             {
                 var claims = new List<Claim>

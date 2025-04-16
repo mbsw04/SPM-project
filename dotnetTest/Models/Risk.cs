@@ -1,6 +1,17 @@
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 namespace dotnetTest.Models;
 
-public class RIsk
+public class Risk
 {
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+
+    public string? RiskId { get; set; }
     
+    public string? ProjectId { get; set; }
+    
+    public string? RiskDescription  { get; set; }
+    
+    public string? RiskStatus { get; set; }
 }
