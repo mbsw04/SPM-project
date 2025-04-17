@@ -40,12 +40,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcm9qZWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/AddRequirements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9BZGRSZXF1aXJlbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/AddRisk.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9BZGRSaXNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/AddTask.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9BZGRUYXNrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/Reports.cshtml]
@@ -87,6 +99,10 @@ build_metadata.AdditionalFiles.CssScope = b-8xpjk1oclx
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-ijao27r5lb
+
+[/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/ProjectDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9Qcm9qZWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-bx29k15z87
 
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s

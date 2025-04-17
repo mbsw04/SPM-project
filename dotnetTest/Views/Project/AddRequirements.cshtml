@@ -1,0 +1,40 @@
+@model dotnetTest.Models.ProjectInfo
+
+@{
+    ViewData["Title"] = "Add Requirements";
+}
+
+<div class="container">
+    <h2>Add Requirements for @Model.ProjectName</h2>
+
+    <form asp-action="AddRequirements" method="post">
+        <input type="hidden" name="projectId" value="@ViewBag.ProjectId" />
+        
+        <div class="form-group mb-4">
+            <label class="form-label">Functional Requirements</label>
+            <div class="mb-2">
+                <small class="text-muted">Enter each requirement on a new line</small>
+            </div>
+            <textarea name="functionalRequirements" class="form-control" rows="6" 
+                      placeholder="Enter functional requirements...&#10;Example:&#10;1. User can create a new project&#10;2. User can add team members">@(Model.FunctionalRequirements != null ? string.Join(Environment.NewLine, Model.FunctionalRequirements) : "")</textarea>
+        </div>
+
+        <div class="form-group mb-4">
+            <label class="form-label">Non-Functional Requirements</label>
+            <div class="mb-2">
+                <small class="text-muted">Enter each requirement on a new line</small>
+            </div>
+            <textarea name="nonFunctionalRequirements" class="form-control" rows="6" 
+                      placeholder="Enter non-functional requirements...&#10;Example:&#10;1. System should respond within 2 seconds&#10;2. System should be available 99.9% of the time">@(Model.NonFunctionalRequirements != null ? string.Join(Environment.NewLine, Model.NonFunctionalRequirements) : "")</textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Save Requirements</button>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

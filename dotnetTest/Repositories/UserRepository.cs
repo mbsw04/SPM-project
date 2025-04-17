@@ -71,7 +71,8 @@ namespace dotnetTest.Repositories
         // Using Entity Framework Core
         public async Task<List<User>> SearchAsync(string searchTerm)
         {
-            return await _users.Find(u => u.Username.Contains(searchTerm)).ToListAsync();
+            
+            return await _users.Find(u => u.Username.ToLower().Contains(searchTerm.ToLower())).ToListAsync();
         }
 
         public async Task UpdateUserAsync(User user)

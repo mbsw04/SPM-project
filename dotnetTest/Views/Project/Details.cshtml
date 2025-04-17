@@ -1,0 +1,147 @@
+@model dotnetTest.Models.ProjectInfo
+@{
+    ViewData["Title"] = "Project Details";
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">@Model.ProjectName</h2>
+        </div>
+        
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h4>Project Manager</h4>
+                    <p class="lead">@Model.ProjectManagerName</p>
+                    
+                    <h4>Due Date</h4>
+                    <p class="lead">@Model.ProjectDueDate</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Project Description</h4>
+                    <p class="lead">@Model.ProjectDescription</p>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">Requirements</h4>
+                                <a href="@Url.Action("AddRequirements", "Project", new { projectId = Model.ProjectId })" class="btn btn-primary">
+                                    @if (Model.FunctionalRequirements?.Any() == true || Model.NonFunctionalRequirements?.Any() == true)
+                                    {
+                                        <span>Edit Requirements</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Add Requirements</span>
+                                    }
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            @if (Model.FunctionalRequirements?.Any() == true || Model.NonFunctionalRequirements?.Any() == true)
+                            {
+                                @if (Model.FunctionalRequirements?.Any() == true)
+                                {
+                                    <h5>Functional Requirements:</h5>
+                                    <ul class="list-group mb-4">
+                                        @foreach (var req in Model.FunctionalRequirements)
+                                        {
+                                            <li class="list-group-item">@req</li>
+                                        }
+                                    </ul>
+                                }
+                                @if (Model.NonFunctionalRequirements?.Any() == true)
+                                {
+                                    <h5>Non-Functional Requirements:</h5>
+                                    <ul class="list-group">
+                                        @foreach (var req in Model.NonFunctionalRequirements)
+                                        {
+                                            <li class="list-group-item">@req</li>
+                                        }
+                                    </ul>
+                                }
+                            }
+                            else
+                            {
+                                <p class="text-muted">No requirements added yet.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">Tasks</h4>
+                                <a href="@Url.Action("AddTask", "Project", new { projectId = Model.ProjectId })" class="btn btn-primary">Add Task</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            @if (Model.Tasks?.Any() == true)
+                            {
+                                <ul class="list-group">
+                                    @foreach (var task in Model.Tasks)
+                                    {
+                                        <li class="list-group-item">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <h6 class="mb-1">@task.TaskDescription</h6>
+                                                    <small class="text-muted">Assigned to: @task.AssignedTo</small>
+                                                </div>
+                                                <span class="badge bg-primary">Due: @task.TaskDueDate</span>
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <p class="text-muted">No tasks added yet.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">Team Members</h4>
+                                <a href="@Url.Action("Search", "Project")" class="btn btn-primary">Add Member</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            @if (Model.Members?.Any() == true)
+                            {
+                                <ul class="list-group">
+                                    @foreach (var member in Model.Members)
+                                    {
+                                        <li class="list-group-item">@member</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <p class="text-muted">No team members added yet.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <a asp-action="Index" class="btn btn-secondary">Back to Projects</a>
+        </div>
+    </div>
+</div> 

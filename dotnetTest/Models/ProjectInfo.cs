@@ -26,14 +26,14 @@ public class ProjectInfo
     [Required]
     public string ProjectManagerName  { get; set; }
     
-    [Required]
-    [MinLength(1, ErrorMessage = "At least one member is required.")]
-    public List<string> Members  { get; set; } 
+    //[Required]
+    //[MinLength(1, ErrorMessage = "At least one member is required.")]
+    public List<Member>? Members  { get; set; } 
     
-    /*
-    public List<string> FunctionalRequirements  { get; set; }
-    public List<string> NonFunctionalRequirements  { get; set; }
-    */
+    
+    public List<string>? FunctionalRequirements  { get; set; }
+    public List<string>? NonFunctionalRequirements  { get; set; }
+    
     
     /*
     [Required]  // Ensures at least one task is provided
@@ -44,8 +44,9 @@ public class ProjectInfo
     /*
     [Required]  // Ensures at least one task is provided
     [MinLength(1, ErrorMessage = "At least one task is required.")]
-    public List<string> Risks { get; set; }
     */
+    public List<Risk>? Risks { get; set; }
+    
     
     public override string ToString()
     {

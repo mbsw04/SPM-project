@@ -13,5 +13,5 @@ public class Risk
     
     public string? RiskDescription  { get; set; }
     
-    public string? RiskStatus { get; set; }
+    public int? RiskStatus { get; set; }
 }

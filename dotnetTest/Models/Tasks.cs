@@ -17,8 +17,11 @@ public class Tasks
     
     public string? TaskDueDate  { get; set; }
     
+    public float? EstimatedHours { get; set; }
+    
     public bool? TaskActive { get; set; }
     
-    public string? AssignedTo { get; set; }
+    public Member? AssignedTo { get; set; }
+    
 
 }

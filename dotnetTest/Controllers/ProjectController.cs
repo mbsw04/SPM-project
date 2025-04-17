@@ -23,6 +23,21 @@ public class ProjectController : BaseController
         ViewBag.ProfilePhotoUrl = await GetUserProfilePhoto();
         return View(projects);
     }
+    public async Task<IActionResult> ProjectDetails(string id)
+    {
+        if (string.IsNullOrEmpty(id))
+        {
+            return NotFound();
+        }
+
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(id);
+        if (project == null)
+        {
+            return NotFound();
+        }
+
+        return View(project);
+    }
 
     public async Task<IActionResult> TeamInfo()
     {
@@ -102,8 +117,10 @@ public class ProjectController : BaseController
     }
     
     
-    public async Task<IActionResult> Search(string searchTerm)
+    public async Task<IActionResult> Search(string searchTerm, string projectId)
     {
+        ViewBag.ProjectId = projectId;
+        
         if (string.IsNullOrWhiteSpace(searchTerm))
         {
             return View(new SearchViewModel
@@ -121,5 +138,118 @@ public class ProjectController : BaseController
         };
     
         return View(viewModel);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> AddRequirements(string projectId)
+    {
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(projectId);
+        if (project == null)
+        {
+            return NotFound();
+        }
+        ViewBag.ProjectId = projectId;
+        return View(project);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddRequirements(string projectId, string functionalRequirements, string nonFunctionalRequirements)
+    {
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(projectId);
+        if (project == null)
+        {
+            return NotFound();
+        }
+
+        // This split requirements by new line as we discussed
+        project.FunctionalRequirements = functionalRequirements
+            .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(r => r.Trim())
+            .Where(r => !string.IsNullOrWhiteSpace(r))
+            .ToList();
+
+        project.NonFunctionalRequirements = nonFunctionalRequirements
+            .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(r => r.Trim())
+            .Where(r => !string.IsNullOrWhiteSpace(r))
+            .ToList();
+
+        await _projectInfoRepository.UpdateProjectInfoAsync(projectId, project);
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Details(string id)
+    {
+        if (string.IsNullOrEmpty(id))
+        {
+            return NotFound();
+        }
+
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(id);
+        if (project == null)
+        {
+            return NotFound();
+        }
+
+        return View(project);
+    }
+
+    [HttpGet]
+    public IActionResult AddRisk(string projectId)
+    {
+        ViewBag.ProjectId = projectId;
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddRisk(Risk risk)
+    {
+        if (ModelState.IsValid)
+        {
+            var project = await _projectInfoRepository.GetProjectInfoByIdAsync(risk.ProjectId);
+            if (project != null)
+            {
+                if (project.Risks == null)
+                {
+                    project.Risks = new List<Risk>();
+                }
+                project.Risks.Add(risk);
+                await _projectInfoRepository.UpdateProjectInfoAsync(risk.ProjectId, project);
+                return RedirectToAction("Index");
+            }
+        }
+        return View(risk);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddMember(string projectId, string userId, string username, string firstName, string lastName, float hours, string role)
+    {
+        if (string.IsNullOrEmpty(projectId) || string.IsNullOrEmpty(username))
+        {
+            return BadRequest();
+        }
+
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(projectId);
+        if (project == null)
+        {
+            return NotFound();
+        }
+
+        // Initialize Members list if null
+        if (project.Members == null)
+        {
+            project.Members = new List<Member>();
+        }
+
+        // Check if member already exists
+        if (!project.Members.Any(m => m.UserName == username))
+        {
+            Member member = new Member(userId, username, firstName, lastName, hours, role);
+            project.Members.Add(member);
+            await _projectInfoRepository.UpdateProjectInfoAsync(projectId, project);
+        }
+
+        // Redirect back to the project details
+        return RedirectToAction(nameof(Details), new { id = projectId });
     }
 }

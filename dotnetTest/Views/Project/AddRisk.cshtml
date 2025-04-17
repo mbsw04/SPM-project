@@ -1,0 +1,37 @@
+@model dotnetTest.Models.Risk
+
+@{
+    ViewData["Title"] = "Add Risk";
+}
+
+<div class="container">
+    <h2>Add Risk</h2>
+
+    <form asp-action="AddRisk" method="post">
+        <input type="hidden" name="ProjectId" value="@ViewBag.ProjectId" />
+        
+        <div class="form-group mb-4">
+            <label class="form-label">Risk Description</label>
+            <textarea name="RiskDescription" class="form-control" rows="3" 
+                      placeholder="Describe the risk..."></textarea>
+        </div>
+
+        <div class="form-group mb-4">
+            <label class="form-label">Risk Status</label>
+            <select name="RiskStatus" class="form-select">
+                <option value="1">Low Risk (1)</option>
+                <option value="2">Medium Risk (2)</option>
+                <option value="3">High Risk (3)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Add Risk</button>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

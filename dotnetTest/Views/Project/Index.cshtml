@@ -28,7 +28,7 @@
         <div class="container">
             <div class="card">
                 <div class="card-header">
-                    <h3><a class="proj" href="">@user.ProjectName</a></h3>
+                    <h3><a class="proj" href="@Url.Action("ProjectDetails", "Project", new { id = user.ProjectId })">@user.ProjectName</a></h3>
                 </div>
                 <label>Project Manager</label>
                 <div class="card-body">
@@ -40,26 +40,108 @@
                     <p>@user.ProjectDescription</p>
                 </div>
                 <hr class="dash">
-                <label>Tasks</label>
+                <label>Requirements</label>
                 <div class="card-body">
-                    @foreach (var task in @user.Tasks)
+                    @if (user.FunctionalRequirements?.Any() == true || user.NonFunctionalRequirements?.Any() == true)
                     {
-                        <li>@task.TaskDescription - Due: @task.TaskDueDate</li>
+                        @if (user.FunctionalRequirements?.Any() == true)
+                        {
+                            <h6 class="mb-3">Functional Requirements:</h6>
+                            <ul class="list-unstyled">
+                                @foreach (var req in user.FunctionalRequirements)
+                                {
+                                    <li>• @req</li>
+                                }
+                            </ul>
+                        }
+                        @if (user.NonFunctionalRequirements?.Any() == true)
+                        {
+                            <h6 class="mb-3">Non-Functional Requirements:</h6>
+                            <ul class="list-unstyled">
+                                @foreach (var req in user.NonFunctionalRequirements)
+                                {
+                                    <li>• @req</li>
+                                }
+                            </ul>
+                        }
+                    }
+                    else
+                    {
+                        <p class="text-muted">No requirements added yet.</p>
                     }
                 </div>
                 <div class="card-body">
-                    <a href="@Url.Action("AddTask", "Project", new { projectId = user.ProjectId })" class="btn btn-primary">Add Task</a>
+                    <a href="@Url.Action("AddRequirements", "Project", new { projectId = user.ProjectId })" class="createBtn">
+                        @if (user.FunctionalRequirements?.Any() == true || user.NonFunctionalRequirements?.Any() == true)
+                        {
+                            <span>Edit Requirements</span>
+                        }
+                        else
+                        {
+                            <span>Add Requirements</span>
+                        }
+                    </a>
+                </div>
+                <hr class="dash">
+                <label>Tasks</label>
+                <div class="card-body">
+                    @if (user.Tasks?.Any() == true)
+                    {
+                        @foreach (var task in @user.Tasks)
+                        {
+                            <li>@task.TaskDescription - Due: @task.TaskDueDate</li>
+                        }
+                    }
+                    else
+                    {
+                        <p class="text-muted">No Tasks added yet.</p>
+                    }
                 </div>
                 <div class="card-body">
-                    <a href="@Url.Action("Search", "Project")" class="btn btn-primary">Add Member</a>
+                    <a href="@Url.Action("AddTask", "Project", new { projectId = user.ProjectId })" class="createBtn">Add Task</a>
+                </div>
+                <hr class="dash">
+                <label>Risks</label>
+                <div class="card-body">
+                    @if (user.Risks?.Any() == true)
+                    {
+                        <ul class="list-unstyled">
+                            @foreach (var risk in user.Risks)
+                            {
+                                <li>
+                                    • @risk.RiskDescription
+                                    <span class="badge @(risk.RiskStatus == 3 ? "bg-danger" : risk.RiskStatus == 2 ? "bg-warning" : "bg-success")">
+                                        @(risk.RiskStatus == 3 ? "High" : risk.RiskStatus == 2 ? "Medium" : "Low")
+                                    </span>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No risks identified yet.</p>
+                    }
+                </div>
+                <div class="card-body">
+                    <a href="@Url.Action("AddRisk", "Project", new { projectId = user.ProjectId })" class="createBtn">Add Risk</a>
                 </div>
                 <hr class="dash">
                 <label>Team Members</label>
                 <div class="card-body">
-                    @foreach (var member in @user.Members)
+                    @if (user.Members?.Any() == true)
                     {
-                        <li>@member</li>
+                        @foreach (var member in @user.Members)
+                        {
+                            <li>@member.MemberFirstName @member.MemberLastName</li>
+                        }
                     }
+                    else
+                    {
+                        <p class="text-muted">No Members added yet.</p>
+                    }
+                </div>
+                <div class="card-body">
+                    <a href="@Url.Action("Search", "Project", new { projectId = user.ProjectId })" class="createBtn">Add Member</a>
                 </div>
             </div>
         </div>

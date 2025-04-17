@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using dotnetTest.Models;
+using dotnetTest.Repositories;
 using Microsoft.AspNetCore.Authorization;
 
 namespace dotnetTest.Controllers;
@@ -9,15 +10,19 @@ namespace dotnetTest.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly ProjectInfoRepository _projectInfoRepository;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, ProjectInfoRepository projectInfoRepository)
     {
         _logger = logger;
+        _projectInfoRepository = projectInfoRepository;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var projects = await _projectInfoRepository.GetAllProjectInfosAsync();
+       /* ViewBag.ProfilePhotoUrl = await GetUserProfilePhoto(); */
+        return View(projects);
     }
 
     public IActionResult Privacy()

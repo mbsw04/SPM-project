@@ -5,6 +5,7 @@
 
 <div class="container">
     <form asp-controller="Project" asp-action="Search" method="get">
+        <input type="hidden" name="projectId" value="@ViewBag.ProjectId" />
         <div class="input-group mb-4">
             <input type="text" name="searchTerm" class="form-control" placeholder="Search users..." value="@Model?.SearchTerm">
             <div class="input-group-append">
@@ -26,11 +27,32 @@
             <div class="list-group">
                 @foreach (var result in Model.Results)
                 {
-                    <a href="@Url.Action("Details", new { id = result.Id })" class="list-group-item list-group-item-action">
-                        <img class="profile-photo rounded-circle" src="@result.ProfilePhotoUrl" alt="">
-                        <h5>@result.Username</h5>
-                        <p>@result.Occupation</p>
-                    </a>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                @if (!string.IsNullOrEmpty(result.ProfilePhotoUrl))
+                                {
+                                    <img src="@result.ProfilePhotoUrl" alt="Profile Photo" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;" />
+                                }
+                                else
+                                {
+                                    <i class="bi bi-person-circle me-2" style="font-size: 2rem; color: #6c757d;"></i>
+                                }
+                                <h5 class="mb-1 d-inline-block">@result.Username</h5>
+                                <p class="mb-1 text-muted">@result.Occupation</p>
+                            </div>
+                            <form asp-action="AddMember" method="post" class="d-inline">
+                                <input type="hidden" name="projectId" value="@ViewBag.ProjectId" />
+                                <input type="hidden" name="userId" value="@result.Id" />
+                                <input type="hidden" name="username" value="@result.Username" />
+                                <input type="hidden" name="firstName" value="@result.FirstName" />
+                                <input type="hidden" name="lastName" value="@result.LastName" />
+                                <input type="hidden" name="hours" value="0" />
+                                <input type="hidden" name="role" value="Developer" />
+                                <button type="submit" class="createBtn">Add to Project</button>
+                            </form>
+                        </div>
+                    </div>
                 }
             </div>
         }

@@ -1,19 +1,114 @@
-@page
-@model dotnetTest.Views.Project.ProjectDetails
-
+@model dotnetTest.Models.ProjectInfo
 @{
-    Layout = null;
+    ViewData["Title"] = "Project Details";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
+
+<div class="container">
+    <header>
+        <h1>@Model.ProjectName</h1>
+        <p class="subtitle">Team Members</p>
+        <div class="team-members">
+            @foreach (var member in Model.Members)
+            {
+                <img src="https://via.placeholder.com/40" alt="Member 1"/>
+                <span>@member.UserName</span>
+            }
+            <button class="add-member">+</button>
+        </div>
+    </header>
+
+    <section class="description">
+        <p>
+            @Model.ProjectDescription
+        </p>
+    </section>
+@*
+    <section class="project-placeholder">
+        <div class="project-box">
+            <h2>Project here</h2>
+        </div>
+    </section>
+    *@
+
+    <section class="progress">
+        <h3>Project progress</h3>
+        <img src="https://via.placeholder.com/400x100?text=Progress+Graph" alt="Progress Graph" />
+    </section>
+
+    <section class="risks">
+        <h3>Risks</h3>
+        @if (Model.Risks?.Any() == true)
+        {
+            <ul class="list-unstyled">
+                @foreach (var risk in Model.Risks)
+                {
+                    <li>
+                        @risk.RiskDescription
+                        <span class="badge @(risk.RiskStatus == 3 ? "bg-danger" : risk.RiskStatus == 2 ? "bg-warning" : "bg-success")">
+                                        @(risk.RiskStatus == 3 ? "High" : risk.RiskStatus == 2 ? "Medium" : "Low")
+                                    </span>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="text-muted">No risks identified yet.</p>
+        }
+        <div class="card-body">
+            <a href="@Url.Action("AddRisk", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Risk</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-box">
+            <h3>Total working hours</h3>
+            <p>per week</p>
+            <h2>40 hours</h2>
+            <img src="https://via.placeholder.com/200x100?text=Working+Hours+Chart" alt="Working Hours" />
+        </div>
+        <div class="stat-box">
+            <h3>Total projects revenue</h3>
+            <p>per year</p>
+            <h2>+20,562.18</h2>
+            <img src="https://via.placeholder.com/200x100?text=Revenue+Chart" alt="Revenue" />
+        </div>
+    </section>
+
+    <section class="requirements">
+        <div class="requirement-box">
+            @if (Model.FunctionalRequirements?.Any() == true)
+            {
+                <h5>Functional Requirements:</h5>
+                <ul class="list-group mb-4">
+                    @foreach (var req in Model.FunctionalRequirements)
+                    {
+                        <li class="list-group-item">@req</li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <span>No Functional Requirements Added Yet</span>
+            }
+        </div>
+        <div class="requirement-box">
+            @if (Model.NonFunctionalRequirements?.Any() == true)
+            {
+                <h5>Non-Functional Requirements:</h5>
+                <ul class="list-group">
+                    @foreach (var req in Model.NonFunctionalRequirements)
+                    {
+                        <li class="list-group-item">@req</li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <span>No Non-Functional Requirements Added Yet</span>
+            }
+        </div>
+    </section>
 </div>
-</body>
-</html>
