@@ -32,7 +32,8 @@
                             <div>
                                 @if (!string.IsNullOrEmpty(result.ProfilePhotoUrl))
                                 {
-                                    <img src="@result.ProfilePhotoUrl" alt="Profile Photo" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;" />
+                                    @*class="profile-photo rounded-circle" class="rounded-circle me-2"*@
+                                    <img src="@result.ProfilePhotoUrl" alt="Profile Photo" class="profile-photo rounded-circle" style=" object-fit: scale-down;" />
                                 }
                                 else
                                 {
@@ -43,6 +44,7 @@
                             </div>
                             <form asp-action="AddMember" method="post" class="d-inline">
                                 <input type="hidden" name="projectId" value="@ViewBag.ProjectId" />
+                                <input type="hidden" name="profilePhotoUrl" value="@result.ProfilePhotoUrl">
                                 <input type="hidden" name="userId" value="@result.Id" />
                                 <input type="hidden" name="username" value="@result.Username" />
                                 <input type="hidden" name="firstName" value="@result.FirstName" />

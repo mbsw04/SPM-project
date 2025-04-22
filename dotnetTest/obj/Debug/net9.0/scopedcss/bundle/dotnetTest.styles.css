@@ -226,7 +226,9 @@ header h1[b-bx29k15z87] {
     cursor: pointer;
 }
 
-.description p[b-bx29k15z87] {
+.description h3[b-bx29k15z87] {
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #666;
     line-height: 1.5;
 }

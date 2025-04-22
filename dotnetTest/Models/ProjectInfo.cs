@@ -34,17 +34,14 @@ public class ProjectInfo
     public List<string>? FunctionalRequirements  { get; set; }
     public List<string>? NonFunctionalRequirements  { get; set; }
     
+    public float? ProjectManagementHours  { get; set; }
+    public float? RequirementAnalysisHours  { get; set; }
+    public float? DesignHours  { get; set; }
+    public float? CodingHours  { get; set; }
+    public float? TestingHours  { get; set; }
     
-    /*
-    [Required]  // Ensures at least one task is provided
-    [MinLength(1, ErrorMessage = "At least one task is required.")]
-    */
     public List<Tasks>? Tasks { get; set; }
     
-    /*
-    [Required]  // Ensures at least one task is provided
-    [MinLength(1, ErrorMessage = "At least one task is required.")]
-    */
     public List<Risk>? Risks { get; set; }
     
     

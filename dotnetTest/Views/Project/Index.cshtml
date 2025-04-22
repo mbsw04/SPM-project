@@ -22,6 +22,7 @@
 <div class="text-center mt-4">
     <a class="createBtn" href="@Url.Action("Create", "Project")">New Project</a>
 </div>
+
 <div>
     @foreach (var user in Model)
     {
@@ -81,6 +82,14 @@
                             <span>Add Requirements</span>
                         }
                     </a>
+                </div>
+                <hr class="dash">
+                <label for="">Effort Tracking</label>
+                <div class="card-body">
+                    <span>Project Management Hours: @user.ProjectManagementHours</span> 
+                </div>
+                <div class="text-center mt-4">
+                    <a class="createBtn" href="@Url.Action("EffortTracking", "Project", new { projectId = user.ProjectId })">Track Hours</a>
                 </div>
                 <hr class="dash">
                 <label>Tasks</label>

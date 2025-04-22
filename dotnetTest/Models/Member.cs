@@ -13,7 +13,8 @@ public class Member
     
     public string? UserId { get; set; }
     public string? TaskId {get; set;}
-    
+    //[BsonElement("profilePhotoUrl")]
+    public string? ProfilePhotoUrl { get; set; }
     [Required]
     public string? UserName { get; set; }
     [Required]
@@ -26,9 +27,10 @@ public class Member
     [Required]
     public string? MemberRole{ get; set; }
 
-    public Member(string userId, string username, string firstName, string lastName, float hours, string role)
+    public Member(string userId, string profilePhotoUrl, string username, string firstName, string lastName, float hours, string role)
     {
         UserId = userId;
+        ProfilePhotoUrl = profilePhotoUrl;
         UserName = username;
         MemberFirstName = firstName;
         MemberLastName = lastName;

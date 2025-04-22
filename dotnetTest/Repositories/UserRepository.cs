@@ -72,7 +72,9 @@ namespace dotnetTest.Repositories
         public async Task<List<User>> SearchAsync(string searchTerm)
         {
             
-            return await _users.Find(u => u.Username.ToLower().Contains(searchTerm.ToLower())).ToListAsync();
+            return await _users.Find(u => u.Username.ToLower().Contains(searchTerm.ToLower()) 
+                                          || u.FirstName.ToLower().Contains(searchTerm.ToLower()) 
+                                          || u.LastName.ToLower().Contains(searchTerm.ToLower())).ToListAsync();
         }
 
         public async Task UpdateUserAsync(User user)

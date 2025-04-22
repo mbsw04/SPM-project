@@ -1,19 +1,48 @@
-@page
-@model dotnetTest.Views.Project.EffortTracking
+@model dotnetTest.Models.ProjectInfo
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Track Effort";
 }
 
-<!DOCTYPE html>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>Track Effort Hours for @Model.ProjectName</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="EffortTracking" method="post">
+                <input type="hidden" name="projectId" value="@ViewBag.ProjectId" />
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
+                <div class="form-group mb-3">
+                    <label class="form-label">Project Management Hours</label>
+                    <input type="number" name="projectManagementHours" class="form-control" value="@Model.ProjectManagementHours" step="0.5" min="0" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Requirement Analysis Hours</label>
+                    <input type="number" name="requirementAnalysisHours" class="form-control" value="@Model.RequirementAnalysisHours" step="0.5" min="0" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Design Hours</label>
+                    <input type="number" name="designHours" class="form-control" value="@Model.DesignHours" step="0.5" min="0" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Coding Hours</label>
+                    <input type="number" name="codingHours" class="form-control" value="@Model.CodingHours" step="0.5" min="0" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-label">Testing Hours</label>
+                    <input type="number" name="testingHours" class="form-control" value="@Model.TestingHours" step="0.5" min="0" />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="createBtn">Save Hours</button>
+                    <a asp-action="Details" asp-route-id="@ViewBag.ProjectId" class="btn btn-secondary">Back to Project</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-</body>
-</html>

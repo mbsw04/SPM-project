@@ -89,9 +89,21 @@ public class ProjectController : BaseController
     }
 
     [HttpGet]
-    public IActionResult AddTask(string projectId)
+    public async Task<IActionResult> AddTask(string projectId)
     {
+        if (string.IsNullOrEmpty(projectId))
+        {
+            return NotFound();
+        }
+
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(projectId);
+        if (project == null)
+        {
+            return NotFound();
+        }
+
         ViewBag.ProjectId = projectId;
+        ViewBag.ProjectMembers = project.Members ?? new List<Member>();
         return View();
     }
 
@@ -128,7 +140,7 @@ public class ProjectController : BaseController
                 Results = new List<User>()
             });
         }
-        
+        //var firstName = await _userRepository.
         var results = await _userRepository.SearchAsync(searchTerm);
     
         var viewModel = new SearchViewModel
@@ -138,6 +150,48 @@ public class ProjectController : BaseController
         };
     
         return View(viewModel);
+    }
+    [HttpGet]
+    public async Task<IActionResult> EffortTracking(string projectId)
+    {
+        if (string.IsNullOrEmpty(projectId))
+        {
+            return NotFound();
+        }
+
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(projectId);
+        if (project == null)
+        {
+            return NotFound();
+        }
+
+        ViewBag.ProjectId = projectId;
+        return View(project);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> EffortTracking(string projectId, float projectManagementHours, float requirementAnalysisHours, 
+        float designHours, float codingHours, float testingHours)
+    {
+        if (string.IsNullOrEmpty(projectId))
+        {
+            return BadRequest("Project ID is required");
+        }
+
+        var project = await _projectInfoRepository.GetProjectInfoByIdAsync(projectId);
+        if (project == null)
+        {
+            return NotFound("Project not found");
+        }
+
+        project.ProjectManagementHours = projectManagementHours;
+        project.RequirementAnalysisHours = requirementAnalysisHours;
+        project.DesignHours = designHours;
+        project.CodingHours = codingHours;
+        project.TestingHours = testingHours;
+
+        await _projectInfoRepository.UpdateProjectInfoAsync(projectId, project);
+        return RedirectToAction(nameof(ProjectDetails), new { id = projectId });
     }
 
     [HttpGet]
@@ -222,7 +276,7 @@ public class ProjectController : BaseController
     }
 
     [HttpPost]
-    public async Task<IActionResult> AddMember(string projectId, string userId, string username, string firstName, string lastName, float hours, string role)
+    public async Task<IActionResult> AddMember(string projectId, string profilePhotoUrl, string userId, string username, string firstName, string lastName, float hours, string role)
     {
         if (string.IsNullOrEmpty(projectId) || string.IsNullOrEmpty(username))
         {
@@ -244,7 +298,7 @@ public class ProjectController : BaseController
         // Check if member already exists
         if (!project.Members.Any(m => m.UserName == username))
         {
-            Member member = new Member(userId, username, firstName, lastName, hours, role);
+            Member member = new Member(userId, profilePhotoUrl, username, firstName, lastName, hours, role);
             project.Members.Add(member);
             await _projectInfoRepository.UpdateProjectInfoAsync(projectId, project);
         }

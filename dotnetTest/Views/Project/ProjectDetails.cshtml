@@ -8,34 +8,43 @@
 <div class="container">
     <header>
         <h1>@Model.ProjectName</h1>
+        <section class="description">
+            <h3>
+                @Model.ProjectDescription
+            </h3>
+        </section>
         <p class="subtitle">Team Members</p>
         <div class="team-members">
-            @foreach (var member in Model.Members)
+            @if (Model.Members?.Any() == true)
             {
-                <img src="https://via.placeholder.com/40" alt="Member 1"/>
-                <span>@member.UserName</span>
+                @foreach (var member in Model.Members)
+                {
+                    <img src="@member.ProfilePhotoUrl" alt="Member 1" class="profile-photo rounded-circle" />
+                    <span>@member.UserName</span>
+                }
             }
-            <button class="add-member">+</button>
+            else
+            {
+                <p class="text-muted">No members added yet.</p>
+            }
+            <a href="@Url.Action("Search", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Member</a>
         </div>
     </header>
 
-    <section class="description">
-        <p>
-            @Model.ProjectDescription
-        </p>
-    </section>
+    
 @*
     <section class="project-placeholder">
         <div class="project-box">
             <h2>Project here</h2>
         </div>
     </section>
-    *@
+    
 
     <section class="progress">
         <h3>Project progress</h3>
         <img src="https://via.placeholder.com/400x100?text=Progress+Graph" alt="Progress Graph" />
     </section>
+    *@
 
     <section class="risks">
         <h3>Risks</h3>
@@ -65,8 +74,22 @@
     <section class="stats">
         <div class="stat-box">
             <h3>Total working hours</h3>
-            <p>per week</p>
-            <h2>40 hours</h2>
+            @*<p>per week</p>*@
+            
+            @if(Model.Tasks.Count!=0)
+            {
+                float? totalHours = 0;
+                foreach (var task in Model.Tasks)
+                {
+                    totalHours += task.EstimatedHours;
+                }
+                <h2>@totalHours</h2>
+            }
+            else
+            {
+                <h2>0 hours</h2>
+            }
+            
             <img src="https://via.placeholder.com/200x100?text=Working+Hours+Chart" alt="Working Hours" />
         </div>
         <div class="stat-box">
