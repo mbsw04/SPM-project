@@ -318,6 +318,6 @@ public class ProjectController : BaseController
         }
 
         // Redirect back to the project details
-        return RedirectToAction(nameof(Details), new { id = projectId });
+        return RedirectToAction(nameof(ProjectDetails), new { id = projectId });
     }
 }

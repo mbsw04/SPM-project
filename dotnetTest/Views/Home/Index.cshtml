@@ -29,7 +29,7 @@
         {
             @foreach (var project in Model)
             {
-                <button class="task-button">
+                <button class="task-button" href="@Url.Action("ProjectDetails", "Project", new { id = project.ProjectId })">
                     <strong>@project.ProjectName</strong><br>
                     <span class="due-date">Due date: @project.ProjectDueDate</span><br>
                     <span class="description">@project.ProjectDescription</span>

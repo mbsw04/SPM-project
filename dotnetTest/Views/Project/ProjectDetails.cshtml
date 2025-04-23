@@ -3,135 +3,179 @@
     ViewData["Title"] = "Project Details";
 }
 
-
+<link rel="stylesheet" href="~/css/project-details.css" />
 
 <div class="container">
-    <header>
+    <div class="project-header">
         <h1>@Model.ProjectName</h1>
-        <section class="description">
-            <h3>
-                @Model.ProjectDescription
-            </h3>
-        </section>
-        <p class="subtitle">Team Members</p>
+        <p class="project-description">@Model.ProjectDescription</p>
         <div class="team-members">
             @if (Model.Members?.Any() == true)
             {
-                @foreach (var member in Model.Members)
+                foreach (var member in Model.Members)
                 {
-                    <img src="@member.ProfilePhotoUrl" alt="Member 1" class="profile-photo rounded-circle" />
-                    <span>@member.UserName</span>
+                    <div class="member-item">
+                        @if (!string.IsNullOrEmpty(member.ProfilePhotoUrl))
+                        {
+                            <img src="@member.ProfilePhotoUrl" alt="@member.MemberFirstName's photo" class="rounded-circle" />
+                        }
+                        else
+                        {
+                            <i class="bi bi-person-circle" style="font-size: 1.5rem; color: #6c757d;"></i>
+                        }
+                        <span>@member.MemberFirstName @member.MemberLastName</span>
+                    </div>
                 }
             }
-            else
-            {
-                <p class="text-muted">No members added yet.</p>
-            }
-            <a href="@Url.Action("Search", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Member</a>
+            <a href="@Url.Action("Search", "Project", new { projectId = Model.ProjectId })" class="createBtn">
+                <i class="bi bi-plus-lg"></i> Add Member
+            </a>
         </div>
-    </header>
+    </div>
 
-    
-@*
-    <section class="project-placeholder">
-        <div class="project-box">
-            <h2>Project here</h2>
-        </div>
-    </section>
-    
-
-    <section class="progress">
-        <h3>Project progress</h3>
-        <img src="https://via.placeholder.com/400x100?text=Progress+Graph" alt="Progress Graph" />
-    </section>
-    *@
-
-    <section class="risks">
-        <h3>Risks</h3>
-        @if (Model.Risks?.Any() == true)
-        {
-            <ul class="list-unstyled">
-                @foreach (var risk in Model.Risks)
-                {
-                    <li>
-                        @risk.RiskDescription
-                        <span class="badge @(risk.RiskStatus == 3 ? "bg-danger" : risk.RiskStatus == 2 ? "bg-warning" : "bg-success")">
-                                        @(risk.RiskStatus == 3 ? "High" : risk.RiskStatus == 2 ? "Medium" : "Low")
-                                    </span>
-                    </li>
-                }
-            </ul>
-        }
-        else
-        {
-            <p class="text-muted">No risks identified yet.</p>
-        }
-        <div class="card-body">
-            <a href="@Url.Action("AddRisk", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Risk</a>
-        </div>
-    </section>
-
-    <section class="stats">
-        <div class="stat-box">
-            <h3>Total working hours</h3>
-            @*<p>per week</p>*@
-            
-            @if(Model.Tasks.Count!=0)
-            {
-                float? totalHours = 0;
-                foreach (var task in Model.Tasks)
-                {
-                    totalHours += task.EstimatedHours;
-                }
-                <h2>@totalHours</h2>
-            }
-            else
-            {
-                <h2>0 hours</h2>
-            }
-            
-            <img src="https://via.placeholder.com/200x100?text=Working+Hours+Chart" alt="Working Hours" />
-        </div>
-        <div class="stat-box">
-            <h3>Total projects revenue</h3>
-            <p>per year</p>
-            <h2>+20,562.18</h2>
-            <img src="https://via.placeholder.com/200x100?text=Revenue+Chart" alt="Revenue" />
-        </div>
-    </section>
-
-    <section class="requirements">
-        <div class="requirement-box">
-            @if (Model.FunctionalRequirements?.Any() == true)
-            {
-                <h5>Functional Requirements:</h5>
-                <ul class="list-group mb-4">
-                    @foreach (var req in Model.FunctionalRequirements)
-                    {
-                        <li class="list-group-item">@req</li>
+    <div class="project-content">
+        <div class="main-content">
+            <!-- Tasks Section -->
+            <div class="card">
+                <div class="task-item">
+                    <h3>Task Hours</h3>
+                    @{
+                        float totalHours = Model.Tasks?.Sum(t => t.EstimatedHours) ?? 0;
                     }
-                </ul>
-            }
-            else
-            {
-                <span>No Functional Requirements Added Yet</span>
-            }
-        </div>
-        <div class="requirement-box">
-            @if (Model.NonFunctionalRequirements?.Any() == true)
-            {
-                <h5>Non-Functional Requirements:</h5>
-                <ul class="list-group">
-                    @foreach (var req in Model.NonFunctionalRequirements)
+                    <h2>@totalHours</h2>
+                </div>
+                <div class="card-header">
+
+                    <h3>Tasks</h3>
+                    <a href="@Url.Action("AddTask", "Project", new { projectId = Model.ProjectId })" class="createBtn">
+                        <i class="bi bi-plus-lg"></i> Add Task
+                    </a>
+                </div>
+                <div class="task-list">
+                    @if (Model.Tasks?.Any() == true)
                     {
-                        <li class="list-group-item">@req</li>
+                        foreach (var task in Model.Tasks.Where(t => t.TaskActive == true))
+                        {
+                            <div class="task-item">
+                                <div>
+                                    <h6 class="mb-1">@task.TaskDescription</h6>
+                                    <small class="text-muted">Assigned to: @task.AssignedTo</small>
+                                </div>
+                                <span class="badge bg-primary">Due: @task.TaskDueDate.ToString()</span>
+                            </div>
+                        }
                     }
-                </ul>
-            }
-            else
-            {
-                <span>No Non-Functional Requirements Added Yet</span>
-            }
+                    else
+                    {
+                        <p class="text-muted">No tasks added yet.</p>
+                    }
+                </div>
+            </div>
+
+            <!-- Requirements Section -->
+            <div class="requirements-section">
+                <div class="requirement-box">
+                    <div class="card-header">
+                        <h5>Functional Requirements</h5>
+                    </div>
+                    @if (Model.FunctionalRequirements?.Any() == true)
+                    {
+                        <ul class="list-group">
+                            @foreach (var req in Model.FunctionalRequirements)
+                            {
+                                <li class="list-group-item">@req</li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No functional requirements added yet.</p>
+                    }
+                </div>
+                <div class="requirement-box">
+                    <div class="card-header">
+                        <h5>Non-Functional Requirements</h5>
+                    </div>
+                    @if (Model.NonFunctionalRequirements?.Any() == true)
+                    {
+                        <ul class="list-group">
+                            @foreach (var req in Model.NonFunctionalRequirements)
+                            {
+                                <li class="list-group-item">@req</li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No non-functional requirements added yet.</p>
+                    }
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="sidebar">
+            <!-- Stats Section -->
+            <div class="stats-grid">
+                
+                <div class="stat-box effort-tracking">
+                    <h3>Effort Distribution</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span>Project Management</span>
+                            <strong>@Model.ProjectManagementHours hrs</strong>
+                        </div>
+                        <div class="hours-item">
+                            <span>Requirements Analysis</span>
+                            <strong>@Model.RequirementAnalysisHours hrs</strong>
+                        </div>
+                        <div class="hours-item">
+                            <span>Design</span>
+                            <strong>@Model.DesignHours hrs</strong>
+                        </div>
+                        <div class="hours-item">
+                            <span>Coding</span>
+                            <strong>@Model.CodingHours hrs</strong>
+                        </div>
+                        <div class="hours-item">
+                            <span>Testing</span>
+                            <strong>@Model.TestingHours hrs</strong>
+                        </div>
+                        <div class="hours-total">
+                            <span>Total Effort</span>
+                            <strong>@(Model.ProjectManagementHours + Model.RequirementAnalysisHours + Model.DesignHours + Model.CodingHours + Model.TestingHours) hrs</strong>
+                        </div>
+                    </div>
+                    <a href="@Url.Action("EffortTracking", "Project", new { projectId = Model.ProjectId })" class="createBtn mt-3">
+                        Update Hours
+                    </a>
+                </div>
+            </div>
+
+            <!-- Risks Section -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Risks</h3>
+                    <a href="@Url.Action("AddRisk", "Project", new { projectId = Model.ProjectId })" class="createBtn">
+                        <i class="bi bi-plus-lg"></i> Add Risk
+                    </a>
+                </div>
+                @if (Model.Risks?.Any() == true)
+                {
+                    foreach (var risk in Model.Risks)
+                    {
+                        <div class="risk-item">
+                            <span>@risk.RiskDescription</span>
+                            <span class="badge @(risk.RiskStatus == 3 ? "bg-danger" : risk.RiskStatus == 2 ? "bg-warning" : "bg-success")">
+                                @(risk.RiskStatus == 3 ? "High" : risk.RiskStatus == 2 ? "Medium" : "Low")
+                            </span>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">No risks identified yet.</p>
+                }
+            </div>
+        </div>
+    </div>
 </div>

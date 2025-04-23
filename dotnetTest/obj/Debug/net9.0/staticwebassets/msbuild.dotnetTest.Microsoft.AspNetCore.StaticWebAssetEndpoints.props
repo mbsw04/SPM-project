@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/dotnetTest/css/project-details.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\project-details.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZZ505s17GNyzImK3nZeBR35x\u002BHsw4c8xsQ6sj1wgIAU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4112"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZZ505s17GNyzImK3nZeBR35x\u002BHsw4c8xsQ6sj1wgIAU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Apr 2025 20:46:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/dotnetTest/css/project-details.vn8z3a0ol8.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\project-details.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vn8z3a0ol8"},{"Name":"integrity","Value":"sha256-ZZ505s17GNyzImK3nZeBR35x\u002BHsw4c8xsQ6sj1wgIAU="},{"Name":"label","Value":"_content/dotnetTest/css/project-details.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4112"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZZ505s17GNyzImK3nZeBR35x\u002BHsw4c8xsQ6sj1wgIAU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Apr 2025 20:46:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/dotnetTest/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -1,0 +1,248 @@
+.project-header {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.project-header h1 {
+    color: #1E1B75;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.member-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.member-item img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.member-item span {
+    color: #495057;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+    width: 30vw;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    color: #1E1B75;
+    margin: 0;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.task-item:hover {
+    background-color: #e9ecef;
+}
+
+.risk-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stat-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    width: fit-content;
+}
+
+.stat-box h3 {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-box h2 {
+    color: #1E1B75;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.requirements-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.requirement-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.requirement-box h5 {
+    color: #1E1B75;
+    margin-bottom: 1rem;
+}
+
+.list-group-item {
+    border: none;
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
+
+.badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.createBtn {
+    display: inline-block;
+    background-color: #1E1B75;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.createBtn:hover {
+    background-color: #2825a3;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.text-muted {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.effort-tracking {
+    width: 100% !important;
+    grid-column: 1 / -1;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.hours-item span {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.hours-item strong {
+    color: #1E1B75;
+    font-weight: 600;
+}
+
+.hours-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    margin-top: 0.5rem;
+    border-top: 2px solid #1E1B75;
+}
+
+.hours-total span {
+    color: #1E1B75;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hours-total strong {
+    color: #1E1B75;
+    font-weight: 700;
+    font-size: 1.1rem;
+} 

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/dotnetTest.y5d694h5q4.bundle.scp.css"
     },
     {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/project-details.css",
+      "PackagePath": "staticwebassets/css/project-details.css"
+    },
+    {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

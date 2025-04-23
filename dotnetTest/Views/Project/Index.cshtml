@@ -86,7 +86,19 @@
                 <hr class="dash">
                 <label for="">Effort Tracking</label>
                 <div class="card-body">
-                    <span>Project Management Hours: @user.ProjectManagementHours</span> 
+                    <span>Project Management: @user.ProjectManagementHours hours</span> 
+                </div>
+                <div class="card-body">
+                    <span>Requirement Analysis: @user.RequirementAnalysisHours hours</span>
+                </div>
+                <div class="card-body">
+                    <span>Design: @user.DesignHours hours</span>
+                </div>
+                <div class="card-body">
+                    <span>Coding : @user.CodingHours hours</span>
+                </div>
+                <div class="card-body">
+                    <span>Testing: @user.TestingHours hours</span>
                 </div>
                 <div class="text-center mt-4">
                     <a class="createBtn" href="@Url.Action("EffortTracking", "Project", new { projectId = user.ProjectId })">Track Hours</a>
