@@ -134,6 +134,94 @@ h1[b-8xpjk1oclx] {
 .createBtn:hover[b-8xpjk1oclx]{
     background-color: #1F1FFF;
 }
+/* _content/dotnetTest/Views/Project/Create.cshtml.rz.scp.css */
+body[b-58hnhjs2ck] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8fc;
+}
+
+h1[b-58hnhjs2ck] {
+    font-family: 'Montserrat';
+    font-size: 48px;
+    color: #1a1a6d;
+}
+
+h2[b-58hnhjs2ck] {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    color: #1a1a6d;
+    margin-bottom: 20px;
+}
+
+.form-group label[b-58hnhjs2ck] {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #1a1a6d;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control[b-58hnhjs2ck] {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #d9d9e8;
+    background-color: #f8f8fc;
+}
+
+textarea.form-control[b-58hnhjs2ck] {
+    resize: vertical;
+    height: 150px;
+}
+
+.task-button[b-58hnhjs2ck] {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #d9d9e8;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    align-content: center;
+}
+
+.task-button:hover[b-58hnhjs2ck] {
+    background-color: #1a1a6d;
+    color: white;
+}
+
+.go-to-projects[b-58hnhjs2ck] {
+    font-family: 'Montserrat';
+    font-size: 17px;
+    display: block;
+    width: fit-content;
+    background-color: #1a1a6d;
+    color: white;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.go-to-projects:hover[b-58hnhjs2ck] {
+    background-color: #1F1FFF;
+}
+
+.mt-3[b-58hnhjs2ck] {
+    margin-top: 15px;
+}
 /* _content/dotnetTest/Views/Project/Index.cshtml.rz.scp.css */
 .welcome[b-ijao27r5lb] {
     text-align: center;

@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj": {}
+    "C:\\Users\\nucle\\RiderProjects\\SPM-project\\dotnetTest\\dotnetTest.csproj": {}
   },
   "projects": {
-    "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj": {
+    "C:\\Users\\nucle\\RiderProjects\\SPM-project\\dotnetTest\\dotnetTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj",
+        "projectUniqueName": "C:\\Users\\nucle\\RiderProjects\\SPM-project\\dotnetTest\\dotnetTest.csproj",
         "projectName": "dotnetTest",
-        "projectPath": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj",
-        "packagesPath": "/Users/connyn/.nuget/packages/",
-        "outputPath": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/",
+        "projectPath": "C:\\Users\\nucle\\RiderProjects\\SPM-project\\dotnetTest\\dotnetTest.csproj",
+        "packagesPath": "C:\\Users\\nucle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nucle\\RiderProjects\\SPM-project\\dotnetTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/connyn/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\nucle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -72,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
