@@ -5244,24 +5244,27 @@
     ]
   },
   "packageFolders": {
-    "/Users/connyn/.nuget/packages/": {}
+    "C:\\Users\\Owner\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\dotnetTest.csproj",
       "projectName": "dotnetTest",
-      "projectPath": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/dotnetTest.csproj",
-      "packagesPath": "/Users/connyn/.nuget/packages/",
-      "outputPath": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/",
+      "projectPath": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\dotnetTest.csproj",
+      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/connyn/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5280,7 +5283,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -5314,7 +5317,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
