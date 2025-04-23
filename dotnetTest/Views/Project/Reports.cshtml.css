@@ -1,5 +1,6 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat';
+    font-size: 22px;
     background: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -13,11 +14,36 @@ body {
 }
 
 h1 {
+    font-family: 'Montserrat';font-size: 48px;
     color: #1d1da8;
     margin-bottom: 30px;
 }
 
 .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card.half {
+    grid-column: span 6;
+}
+
+.card.full {
+    grid-column: span 12;
+}
+
+
+
+/* .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -29,7 +55,7 @@ h1 {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
+} */
 
 .card h3 {
     margin-top: 0;
