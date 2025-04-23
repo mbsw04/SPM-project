@@ -25,33 +25,27 @@
     <div class="left-column">
         <h1>Welcome, @User.Identity.Name!</h1>
         <p>Current projects:</p>
-
-        <button class="task-button">
-            <strong>TaskMaster Pro</strong><br>
-            <span class="due-date">Due date: March 26, 2025</span><br>
-            <span class="description">A productivity app that helps users organize, prioritize, and track their daily tasks with AI-powered suggestions and team collaboration features. </span>
-        </button>
-        <button class="task-button">
-            <strong>HealthTrack</strong><br>
-            <span class="due-date">Due date: April 2, 2025</span><br>
-            <span class="description">A fitness and wellness app that tracks workouts, nutrition, and sleep patterns while providing personalized health insights. </span>
-        </button>
-        <button class="task-button">
-            <strong>CodeCollab</strong><br>
-            <span class="due-date">Due date: September 16, 2025</span><br>
-            <span class="description"> A real-time collaborative code editor for developers, supporting multiple languages, version control, and live debugging.</span>
-        </button>
-        
-        @foreach(var project in Model)
+        @if (Model?.Any() == true)
+        {
+            @foreach (var project in Model)
+            {
+                <button class="task-button">
+                    <strong>@project.ProjectName</strong><br>
+                    <span class="due-date">Due date: @project.ProjectDueDate</span><br>
+                    <span class="description">@project.ProjectDescription</span>
+                </button>
+            }
+            <a href="@Url.Action("Index", "Project")" class="go-to-projects">Go to projects  →</a>
+        }
+        else
         {
             <button class="task-button">
-                <strong>@project.ProjectName</strong><br>
-                <span class="due-date">Due date: @project.ProjectDueDate</span><br>
-                <span class="description">@project.ProjectDescription</span>
+                <strong><h1>No projects created.</h1></strong>
+                <a class="createBtn" href="@Url.Action("Create", "Project")">New Project</a>
             </button>
         }
 
-        <a href="@Url.Action("Index", "Project")" class="go-to-projects">Go to projects  →</a>
+       
 
     </div>
     <div class="right-column">

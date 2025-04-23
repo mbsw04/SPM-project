@@ -152,6 +152,9 @@
                 <div class="card-body">
                     <a href="@Url.Action("Search", "Project", new { projectId = user.ProjectId })" class="createBtn">Add Member</a>
                 </div>
+                <div class="card-body">
+                    <a href="@Url.Action("Delete", "Project", new { projectId = user.ProjectId })" class="createBtn">Delete</a>
+                </div>
             </div>
         </div>
     }

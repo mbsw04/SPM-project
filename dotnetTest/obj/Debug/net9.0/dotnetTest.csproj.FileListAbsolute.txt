@@ -215,5 +215,6 @@
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/bin/Debug/net9.0/DotNetEnv.dll
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/bin/Debug/net9.0/Sprache.dll
 /Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Project/ProjectDetails.cshtml.rz.scp.css
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-nodkv91v42.gz
-/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-nodkv91v42.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/Views/Project/Reports.cshtml.rz.scp.css
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/ktjdfh9sig-y5d694h5q4.gz
+/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/compressed/z1jxmte7gv-y5d694h5q4.gz

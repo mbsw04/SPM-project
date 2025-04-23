@@ -1,20 +1,54 @@
-@page
-@model List<ProjectInfo>
 
-@* work on template*@
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>REPORTS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reports</title>
 </head>
 <body>
-<div>
-    
+<div class="container">
+    <h1>Reports</h1>
+
+    <div class="grid">
+        <div class="card highlight">
+            <h3>Total projects</h3>
+            <p class="metric">182</p>
+            <button>Add new project</button>
+        </div>
+
+        <div class="card">
+            <h3>Team size</h3>
+            <p class="metric">10</p>
+            <button>Add group member</button>
+        </div>
+
+        <div class="card wide">
+            <h3>Project progress</h3>
+            <img src="https://via.placeholder.com/350x100?text=Progress+Chart" alt="Progress Chart" />
+        </div>
+
+        <div class="card">
+            <h3>Total working hours <span class="subtext">per week</span></h3>
+            <p class="metric">40 hours</p>
+            <img src="https://via.placeholder.com/200x100?text=Hours+Chart" alt="Working Hours Chart" />
+        </div>
+
+        <div class="card">
+            <h3>Total projects revenue <span class="subtext">per year</span></h3>
+            <p class="metric">+20,562.18</p>
+            <img src="https://via.placeholder.com/200x100?text=Revenue+Chart" alt="Revenue Chart" />
+        </div>
+
+        <div class="card wide">
+            <h3>Project categories</h3>
+            <div class="categories">
+                <div class="cat research">Research</div>
+                <div class="cat marketing">Marketing</div>
+                <div class="cat ops">Operations</div>
+                <div class="cat customers">Customers</div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

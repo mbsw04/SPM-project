@@ -1,4 +1,4 @@
-body {
+body[b-ee09qvlph4] {
     font-family: 'Arial', sans-serif;
     background: #f9f9f9;
     margin: 0;
@@ -6,24 +6,24 @@ body {
     color: #333;
 }
 
-.container {
+.container[b-ee09qvlph4] {
     max-width: 1000px;
     margin: auto;
     padding: 30px 20px;
 }
 
-h1 {
+h1[b-ee09qvlph4] {
     color: #1d1da8;
     margin-bottom: 30px;
 }
 
-.grid {
+.grid[b-ee09qvlph4] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
-.card {
+.card[b-ee09qvlph4] {
     background: #fff;
     border: 1px solid #ddd;
     padding: 20px;
@@ -31,25 +31,25 @@ h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.card h3 {
+.card h3[b-ee09qvlph4] {
     margin-top: 0;
     font-size: 16px;
     color: #333;
 }
 
-.card .subtext {
+.card .subtext[b-ee09qvlph4] {
     color: #888;
     font-weight: normal;
     font-size: 13px;
 }
 
-.metric {
+.metric[b-ee09qvlph4] {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-button {
+button[b-ee09qvlph4] {
     background: #1d1da8;
     color: #fff;
     border: none;
@@ -60,21 +60,21 @@ button {
     margin-top: 10px;
 }
 
-.highlight {
+.highlight[b-ee09qvlph4] {
     border: 2px solid #00aaff;
 }
 
-.wide {
+.wide[b-ee09qvlph4] {
     grid-column: span 2;
 }
 
-.categories {
+.categories[b-ee09qvlph4] {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.cat {
+.cat[b-ee09qvlph4] {
     flex: 1;
     margin: 0 5px;
     text-align: center;
@@ -84,8 +84,8 @@ button {
     color: #fff;
 }
 
-.research { background: #f97316; }   /* Orange */
-.marketing { background: #3b82f6; }  /* Blue */
-.ops { background: #10b981; }        /* Green */
-.customers { background: #facc15; color: #333; } /* Yellow */
+.research[b-ee09qvlph4] { background: #f97316; }   /* Orange */
+.marketing[b-ee09qvlph4] { background: #3b82f6; }  /* Blue */
+.ops[b-ee09qvlph4] { background: #10b981; }        /* Green */
+.customers[b-ee09qvlph4] { background: #facc15; color: #333; } /* Yellow */
   

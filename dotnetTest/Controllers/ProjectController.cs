@@ -127,7 +127,17 @@ public class ProjectController : BaseController
         }
         return View(task);
     }
-    
+
+    public async Task<IActionResult> Delete(string projectId)
+    {
+        if (string.IsNullOrEmpty(projectId))
+        {
+            return NotFound();
+        }
+
+        await _projectInfoRepository.DeleteProjectInfoAsync(projectId);
+        return RedirectToAction("Index");
+    }
     
     public async Task<IActionResult> Search(string searchTerm, string projectId)
     {
@@ -151,6 +161,9 @@ public class ProjectController : BaseController
     
         return View(viewModel);
     }
+    
+    
+    
     [HttpGet]
     public async Task<IActionResult> EffortTracking(string projectId)
     {
@@ -206,6 +219,7 @@ public class ProjectController : BaseController
         return View(project);
     }
 
+    
     [HttpPost]
     public async Task<IActionResult> AddRequirements(string projectId, string functionalRequirements, string nonFunctionalRequirements)
     {

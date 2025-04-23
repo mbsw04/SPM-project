@@ -23,15 +23,29 @@
                 <td><a href="">@user.ProjectName</a></td>
                 <td>@user.ProjectManagerName</td>
                 <td>
-                    @foreach (var task in @user.Tasks)
+                    @if (@user.Tasks?.Any() == true)
                     {
-                        <li>@task</li>
+                        @foreach (var task in @user.Tasks)
+                        {
+                            <li>@task</li>
+                        }
+                    }
+                    else
+                    {
+                        <p>No tasks added.</p>
                     }
                 </td>
                 <td>
-                    @foreach (var member in @user.Members)
+                    @if (@user.Tasks?.Any() == true)
                     {
-                        <li>@member</li>
+                        @foreach (var member in @user.Members)
+                        {
+                            <li>@member</li>
+                        }
+                    }
+                    else
+                    {
+                        <p>No members added.</p>
                     }
                 </td>
             </tr>

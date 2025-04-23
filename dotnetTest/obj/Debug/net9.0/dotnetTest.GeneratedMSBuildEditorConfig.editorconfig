@@ -64,10 +64,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9FZmZvcnRUcmFja2luZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/Reports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9SZXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9TZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -107,6 +103,10 @@ build_metadata.AdditionalFiles.CssScope = b-ijao27r5lb
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/ProjectDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9Qcm9qZWN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-bx29k15z87
+
+[/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Project/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9SZXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-ee09qvlph4
 
 [/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
