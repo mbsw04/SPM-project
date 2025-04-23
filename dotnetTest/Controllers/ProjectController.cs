@@ -87,7 +87,7 @@ public class ProjectController : BaseController
         
         return View(project);
     }
-
+    
     [HttpGet]
     public async Task<IActionResult> AddTask(string projectId)
     {
@@ -107,7 +107,7 @@ public class ProjectController : BaseController
         return View();
     }
 
-    [HttpPost]
+     [HttpPost]
     public async Task<IActionResult> AddTask(Tasks task)
     {
         if (ModelState.IsValid)
@@ -136,7 +136,7 @@ public class ProjectController : BaseController
         }
 
         await _projectInfoRepository.DeleteProjectInfoAsync(projectId);
-        return RedirectToAction("Index");
+            return RedirectToAction("Index");
     }
     
     public async Task<IActionResult> Search(string searchTerm, string projectId)

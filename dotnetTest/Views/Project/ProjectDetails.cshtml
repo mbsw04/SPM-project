@@ -18,9 +18,9 @@
                         @if (!string.IsNullOrEmpty(member.ProfilePhotoUrl))
                         {
                             <img src="@member.ProfilePhotoUrl" alt="@member.MemberFirstName's photo" class="rounded-circle" />
-                        }
-                        else
-                        {
+            }
+            else
+            {
                             <i class="bi bi-person-circle" style="font-size: 1.5rem; color: #6c757d;"></i>
                         }
                         <span>@member.MemberFirstName @member.MemberLastName</span>
@@ -64,49 +64,49 @@
                                 <span class="badge bg-primary">Due: @task.TaskDueDate.ToString()</span>
                             </div>
                         }
-                    }
-                    else
-                    {
+            }
+            else
+            {
                         <p class="text-muted">No tasks added yet.</p>
-                    }
-                </div>
-            </div>
+            }
+        </div>
+        </div>
 
             <!-- Requirements Section -->
             <div class="requirements-section">
-                <div class="requirement-box">
+        <div class="requirement-box">
                     <div class="card-header">
                         <h5>Functional Requirements</h5>
                     </div>
-                    @if (Model.FunctionalRequirements?.Any() == true)
-                    {
+            @if (Model.FunctionalRequirements?.Any() == true)
+            {
                         <ul class="list-group">
-                            @foreach (var req in Model.FunctionalRequirements)
-                            {
-                                <li class="list-group-item">@req</li>
-                            }
-                        </ul>
-                    }
-                    else
+                    @foreach (var req in Model.FunctionalRequirements)
                     {
-                        <p class="text-muted">No functional requirements added yet.</p>
+                        <li class="list-group-item">@req</li>
                     }
-                </div>
-                <div class="requirement-box">
+                </ul>
+            }
+            else
+            {
+                        <p class="text-muted">No functional requirements added yet.</p>
+            }
+        </div>
+        <div class="requirement-box">
                     <div class="card-header">
                         <h5>Non-Functional Requirements</h5>
                     </div>
-                    @if (Model.NonFunctionalRequirements?.Any() == true)
+            @if (Model.NonFunctionalRequirements?.Any() == true)
+            {
+                <ul class="list-group">
+                    @foreach (var req in Model.NonFunctionalRequirements)
                     {
-                        <ul class="list-group">
-                            @foreach (var req in Model.NonFunctionalRequirements)
-                            {
-                                <li class="list-group-item">@req</li>
-                            }
-                        </ul>
+                        <li class="list-group-item">@req</li>
                     }
-                    else
-                    {
+                </ul>
+            }
+            else
+            {
                         <p class="text-muted">No non-functional requirements added yet.</p>
                     }
                 </div>
