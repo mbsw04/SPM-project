@@ -51,7 +51,7 @@ public class ProjectController : BaseController
         return View(projects);
     }
 
-    public IActionResult Create() => View();
+    public IActionResult Create() => View(); 
 
     [HttpPost]
     public async Task<IActionResult> Create(ProjectInfo project)
