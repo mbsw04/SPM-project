@@ -13,7 +13,12 @@
     border-radius: 30px;
 }
 .col-md-4[b-7gy038kou5]{
+    background-color: #d9d9e8;
     padding-bottom: 100px;
+}
+
+.form-label[b-7gy038kou5]{
+    
 }
 /* _content/dotnetTest/Views/Home/Index.cshtml.rz.scp.css */
 body[b-tkkpmxjrtr] {
@@ -35,8 +40,12 @@ body[b-tkkpmxjrtr] {
     justify-content: center;
     /*align-items: left;*/
 }
+.left-column[b-tkkpmxjrtr]{
+    padding-top: 70px;
+}
 h1[b-tkkpmxjrtr] {
     font-family: 'Montserrat';font-size: 48px;
+    font-weight: bold;
     color: #1a1a6d;
 }
 .task-button[b-tkkpmxjrtr] {
@@ -136,23 +145,26 @@ h1[b-tkkpmxjrtr] {
 }
 /* _content/dotnetTest/Views/Project/Index.cshtml.rz.scp.css */
 .welcome[b-49n0c0sgbj] {
+    font-family: 'Montserrat';font-size: 40px;
+
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: -10px;
 }
 .proj[b-49n0c0sgbj]{
+    font-family: 'Montserrat';
     text-transform: capitalize;
+    font-weight: bold;
     text-align: center;
-    color: black;
+    color: #1a1a6d;
     text-decoration: none;
 }
 .card[b-49n0c0sgbj] {
     
     text-align: center;
-    background-color: #d8d8ff;
+    background-color: #d9d9e8;
     border-radius: 20px;
-    border: 5px solid #1a237e;
     opacity: 80%
 }
 
@@ -161,8 +173,10 @@ h1[b-tkkpmxjrtr] {
 }
 
 label[b-49n0c0sgbj] {
-    font-size: 20px;
+    color: #1a1a6d;
     font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 25px;
 }
 
 .container[b-49n0c0sgbj] {
@@ -175,14 +189,19 @@ label[b-49n0c0sgbj] {
 }
 .dash[b-49n0c0sgbj]{
     border-top: 3px dashed #000;
+    
 }
 .createBtn[b-49n0c0sgbj]{
     display: inline-block;
-    background-color: #1E1B75;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 35px;
     border-radius: 20px;
     text-decoration: none;
+
+    font-family: 'Montserrat';
+    font-size: 17px;
+    background-color: #1a1a6d;
+    color: white;    
 }
 .createBtn:hover[b-49n0c0sgbj]{
     background-color: #1F1FFF;
@@ -343,7 +362,8 @@ header h1[b-g567no8myq] {
 }
 /* _content/dotnetTest/Views/Project/Reports.cshtml.rz.scp.css */
 body[b-opy13iyyts] {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat';
+    font-size: 22px;
     background: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -357,13 +377,15 @@ body[b-opy13iyyts] {
 }
 
 h1[b-opy13iyyts] {
-    color: #1d1da8;
+    font-family: 'Montserrat';font-size: 48px;
+    font-weight: bold;
+    color: #1a1a6d;
     margin-bottom: 30px;
 }
 
 .grid[b-opy13iyyts] {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 }
 
@@ -375,33 +397,67 @@ h1[b-opy13iyyts] {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+.card.half[b-opy13iyyts] {
+    background-color: #d9d9e8;
+    grid-column: span 6;
+}
+
+.card.full[b-opy13iyyts] {
+    background-color: #d9d9e8;
+    grid-column: span 12;
+}
+
+
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+} */
+
 .card h3[b-opy13iyyts] {
+    font-family: 'Montserrat';
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #1a1a6d;
+
+    font-size: 25px;
     margin-top: 0;
-    font-size: 16px;
-    color: #333;
 }
 
 .card .subtext[b-opy13iyyts] {
-    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d3939;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .metric[b-opy13iyyts] {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     margin: 10px 0;
 }
 
 button[b-opy13iyyts] {
-    background: #1d1da8;
-    color: #fff;
+    font-family: 'Montserrat';
     border: none;
-    padding: 8px 14px;
     border-radius: 8px;
-    font-size: 14px;
     cursor: pointer;
     margin-top: 10px;
+
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 17px;
+    background-color: #1a1a6d;
+    color: white; 
 }
 
 .highlight[b-opy13iyyts] {

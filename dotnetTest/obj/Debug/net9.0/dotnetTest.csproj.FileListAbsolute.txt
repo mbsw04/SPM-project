@@ -202,8 +202,6 @@ C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\compressed\7wld29gy56-mlv21k5csn.gz
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\compressed\dxymgkv14h-61n19gt1b8.gz
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\compressed\l6pg6qcrg2-37ifon6btq.gz
-C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\compressed\ktjdfh9sig-y7csn1cua1.gz
-C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\compressed\z1jxmte7gv-y7csn1cua1.gz
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -219,3 +217,5 @@ C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\dotnetTest.pdb
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\dotnetTest.genruntimeconfig.cache
 C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\ref\dotnetTest.dll
+C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\compressed\ktjdfh9sig-5y0g8ibyh1.gz
+C:\Users\Owner\OneDrive - Kennesaw State University\Documents\GitHub\SPM-project\dotnetTest\obj\Debug\net9.0\compressed\z1jxmte7gv-5y0g8ibyh1.gz
