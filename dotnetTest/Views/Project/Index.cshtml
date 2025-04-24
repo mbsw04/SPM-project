@@ -2,6 +2,18 @@
 @{
     ViewData["Title"] = "My Projects";
 }
+<script>document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".card").forEach(function (card) {
+            card.addEventListener("click", function (e) {
+                if (!e.target.closest("a")) {
+                    const href = card.getAttribute("data-href");
+                    if (href) {
+                        window.location.href = href;
+                    }
+                }
+            });
+        });
+    });</script>
 
 <div class="text-center mb-4">
     <div class="profile-photo-container">
@@ -27,7 +39,7 @@
     @foreach (var user in Model)
     {
         <div class="container">
-            <div class="card">
+            <div class="card" data-href="@Url.Action("ProjectDetails", "Project", new { id = user.ProjectId })">
                 <div class="card-header">
                     <h3><a class="proj" href="@Url.Action("ProjectDetails", "Project", new { id = user.ProjectId })">@user.ProjectName</a></h3>
                 </div>
