@@ -36,23 +36,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.y7csn1cua1.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.5y0g8ibyh1.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>dotnetTest</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/dotnetTest</BasePath>
-      <RelativePath>dotnetTest.y7csn1cua1.bundle.scp.css</RelativePath>
+      <RelativePath>dotnetTest.5y0g8ibyh1.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>y7csn1cua1</Fingerprint>
-      <Integrity>3ocar+L5e9ETAnBiXzWgy7lx2xsrobPtqkJ5Dhtkmp8=</Integrity>
+      <Fingerprint>5y0g8ibyh1</Fingerprint>
+      <Integrity>M9d4nIVm9T/qwc4Qtt1QYlo8YxLxCL1QMwfgBTCXjww=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.y7csn1cua1.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dotnetTest.5y0g8ibyh1.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>
@@ -1205,6 +1205,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\style.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profile-photos\cvarner5-fe37c99a-365e-4e82-a296-d55174fa8423.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>dotnetTest</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/dotnetTest</BasePath>
+      <RelativePath>uploads/profile-photos/cvarner5-fe37c99a-365e-4e82-a296-d55174fa8423.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>k5o39sfqm1</Fingerprint>
+      <Integrity>+FlOl7dWtvmqPbtkodxw2NZZOtABlukDIBK8EpMABMI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profile-photos\cvarner5-fe37c99a-365e-4e82-a296-d55174fa8423.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\profile-photos\frostyYuhh-7f7d8220-d2fe-4240-b36f-1547553fde6b.jpg'))">
       <SourceType>Package</SourceType>

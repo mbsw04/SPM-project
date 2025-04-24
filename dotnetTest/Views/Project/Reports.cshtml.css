@@ -15,7 +15,8 @@ body {
 
 h1 {
     font-family: 'Montserrat';font-size: 48px;
-    color: #1d1da8;
+    font-weight: bold;
+    color: #1a1a6d;
     margin-bottom: 30px;
 }
 
@@ -34,10 +35,12 @@ h1 {
 }
 
 .card.half {
+    background-color: #d9d9e8;
     grid-column: span 6;
 }
 
 .card.full {
+    background-color: #d9d9e8;
     grid-column: span 12;
 }
 
@@ -58,32 +61,40 @@ h1 {
 } */
 
 .card h3 {
+    font-family: 'Montserrat';
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #1a1a6d;
+
+    font-size: 25px;
     margin-top: 0;
-    font-size: 16px;
-    color: #333;
 }
 
 .card .subtext {
-    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d3939;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .metric {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     margin: 10px 0;
 }
 
 button {
-    background: #1d1da8;
-    color: #fff;
+    font-family: 'Montserrat';
     border: none;
-    padding: 8px 14px;
     border-radius: 8px;
-    font-size: 14px;
     cursor: pointer;
     margin-top: 10px;
+
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 17px;
+    background-color: #1a1a6d;
+    color: white; 
 }
 
 .highlight {

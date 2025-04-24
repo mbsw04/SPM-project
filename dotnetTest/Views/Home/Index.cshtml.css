@@ -17,8 +17,12 @@ body {
     justify-content: center;
     /*align-items: left;*/
 }
+.left-column{
+    padding-top: 70px;
+}
 h1 {
     font-family: 'Montserrat';font-size: 48px;
+    font-weight: bold;
     color: #1a1a6d;
 }
 .task-button {

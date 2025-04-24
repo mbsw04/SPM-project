@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\dotnetTest.bundle.scp.css",
-      "PackagePath": "staticwebassets\\dotnetTest.y7csn1cua1.bundle.scp.css"
+      "PackagePath": "staticwebassets\\dotnetTest.5y0g8ibyh1.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\wwwroot\\css\\project-details.css",
@@ -267,6 +267,10 @@
     {
       "Id": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\wwwroot\\uploads\\profile-photos\\cvarner5-fe37c99a-365e-4e82-a296-d55174fa8423.jfif",
+      "PackagePath": "staticwebassets\\uploads\\profile-photos\\cvarner5-fe37c99a-365e-4e82-a296-d55174fa8423.jfif"
     },
     {
       "Id": "C:\\Users\\Owner\\OneDrive - Kennesaw State University\\Documents\\GitHub\\SPM-project\\dotnetTest\\wwwroot\\uploads\\profile-photos\\frostyYuhh-7f7d8220-d2fe-4240-b36f-1547553fde6b.jpg",
