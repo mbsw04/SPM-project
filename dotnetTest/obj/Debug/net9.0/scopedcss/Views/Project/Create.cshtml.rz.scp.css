@@ -1,18 +1,25 @@
+body[b-nsvnilmj0t] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8fc;
+}
 
-h1 {
+h1[b-nsvnilmj0t] {
     font-family: 'Montserrat';
     font-size: 48px;
     color: #1a1a6d;
 }
 
-h2 {
+h2[b-nsvnilmj0t] {
     font-family: 'Montserrat';
     font-size: 36px;
     color: #1a1a6d;
     margin-bottom: 20px;
 }
 
-.form-group label {
+.form-group label[b-nsvnilmj0t] {
     font-family: 'Montserrat';
     font-size: 18px;
     color: #1a1a6d;
@@ -20,7 +27,7 @@ h2 {
     display: block;
 }
 
-.form-control {
+.form-control[b-nsvnilmj0t] {
     font-family: 'Montserrat';
     font-size: 18px;
     width: 100%;
@@ -31,12 +38,12 @@ h2 {
     background-color: #f8f8fc;
 }
 
-textarea.form-control {
+textarea.form-control[b-nsvnilmj0t] {
     resize: vertical;
     height: 150px;
 }
 
-.task-button {
+.task-button[b-nsvnilmj0t] {
     font-family: 'Montserrat';
     font-size: 22px;
     display: block;
@@ -52,12 +59,12 @@ textarea.form-control {
     align-content: center;
 }
 
-.task-button:hover {
+.task-button:hover[b-nsvnilmj0t] {
     background-color: #1a1a6d;
     color: white;
 }
 
-.go-to-projects {
+.go-to-projects[b-nsvnilmj0t] {
     font-family: 'Montserrat';
     font-size: 17px;
     display: block;
@@ -71,10 +78,10 @@ textarea.form-control {
     text-align: center;
 }
 
-.go-to-projects:hover {
+.go-to-projects:hover[b-nsvnilmj0t] {
     background-color: #1F1FFF;
 }
 
-.mt-3 {
+.mt-3[b-nsvnilmj0t] {
     margin-top: 15px;
 }
