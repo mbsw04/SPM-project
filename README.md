@@ -6,7 +6,7 @@ This repository contains the source code for ManageMe.io. It also contains this 
 
 - [Team Members](#team-members)
 - [Documentation](#documentation)
-- [Functionalities of ManageMe.io](#functionalities-of-manageme.io)
+- [Functionalities of ManageMe.io](#functionalities-of-managemeio)
 - [AWS](#aws)
 - [MongoDB](#mongodb)
 - [Final Video Presentation](#final-video-presentation)
