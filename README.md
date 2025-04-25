@@ -21,8 +21,8 @@ This project was completed by the following students:
 - Caroline Varner
 
 ## Documentation
-- [Quick Plan](./Artifacts/ProjectQuickPlan.pdf)
-- [Comprehensive Plan](./Artifacts/ProjectComprehensivePlan.pdf)
+- [Quick Plan](dotnetTest/Artifacts/ProjectQuickPlan.pdf)
+- [Comprehensive Plan](dotnetTest/Artifacts/ProjectComprehensivePlan.pdf)
 
 ## Functionalities of ManageMe.io
 ManageMe.io is a system that takes managing your team and projects to the next level. This system is hosted on the web by AWS Elastic Beanstalk, uses MongoDB as it's database, and even works on mobile devices. ManageMe.io is a project managers wish come true!<br><br>
