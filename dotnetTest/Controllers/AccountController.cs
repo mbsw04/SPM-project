@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace dotnetTest.Controllers
 {
@@ -98,6 +99,42 @@ namespace dotnetTest.Controllers
             if (await _userRepository.GetByEmailAsync(email) != null)
             {
                 ModelState.AddModelError("Email", "Email already exists");
+                return View();
+            }
+
+            if (password.Length < 8)
+            {
+                ModelState.AddModelError("Username", "Password must be at least 8 characters");
+                return View();
+            }
+            
+
+            if (!password.Any(char.IsDigit))
+            {
+                ModelState.AddModelError("Username", "Password must contain at least one digit");
+                return View();
+            }
+
+            if (!password.Any(char.IsLetter))
+            {
+                ModelState.AddModelError("Username", "Password must contain at least one letter");
+                return View();
+            }
+            if (!password.Any(char.IsUpper))
+            {
+                ModelState.AddModelError("Username", "Password must contain at least one upper case");
+                return View();
+            }
+
+            if (!password.Any(char.IsLower))
+            {
+                ModelState.AddModelError("Username", "Password must contain at least one lower case");
+                return View();
+            }
+
+            if (!password.Any(char.IsSymbol))
+            {
+                ModelState.AddModelError("Username", "Password must contain at least one symbol");
                 return View();
             }
 
