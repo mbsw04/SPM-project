@@ -8,6 +8,7 @@
 <div class="container">
     <div class="project-header">
         <h1>@Model.ProjectName</h1>
+        <h3>Manager: @Model.ProjectManagerName</h3>
         <p class="project-description">@Model.ProjectDescription</p>
         <div class="team-members">
             @if (Model.Members?.Any() == true)
@@ -74,43 +75,53 @@
 
             <!-- Requirements Section -->
             <div class="requirements-section">
-        <div class="requirement-box">
+                <div class="requirement-box">
                     <div class="card-header">
                         <h5>Functional Requirements</h5>
                     </div>
-            @if (Model.FunctionalRequirements?.Any() == true)
-            {
-                        <ul class="list-group">
-                    @foreach (var req in Model.FunctionalRequirements)
+                    @if (Model.FunctionalRequirements?.Any() == true)
                     {
-                        <li class="list-group-item">@req</li>
+                        <ul class="list-group">
+                            @foreach (var req in Model.FunctionalRequirements)
+                            {
+                                <li class="list-group-item">@req</li>
+                            }
+                        </ul>
                     }
-                </ul>
-            }
-            else
-            {
+                    else
+                    {
                         <p class="text-muted">No functional requirements added yet.</p>
-            }
-        </div>
-        <div class="requirement-box">
+                    }
+                </div>
+                <div class="requirement-box">
                     <div class="card-header">
                         <h5>Non-Functional Requirements</h5>
                     </div>
-            @if (Model.NonFunctionalRequirements?.Any() == true)
-            {
-                <ul class="list-group">
-                    @foreach (var req in Model.NonFunctionalRequirements)
+                    @if (Model.NonFunctionalRequirements?.Any() == true)
                     {
-                        <li class="list-group-item">@req</li>
+                        <ul class="list-group">
+                            @foreach (var req in Model.NonFunctionalRequirements)
+                            {
+                                <li class="list-group-item">@req</li>
+                            }
+                        </ul>
                     }
-                </ul>
-            }
-            else
-            {
+                    else
+                    {
                         <p class="text-muted">No non-functional requirements added yet.</p>
                     }
                 </div>
             </div>
+            <a href="@Url.Action("AddRequirements", "Project", new { projectId = Model.ProjectId })" class="createBtn">
+                @if (Model.FunctionalRequirements?.Any() == true || Model.NonFunctionalRequirements?.Any() == true)
+                {
+                    <span>Edit Requirements</span>
+                }
+                else
+                {
+                    <span>Add Requirements</span>
+                }
+            </a>
         </div>
 
         <div class="sidebar">

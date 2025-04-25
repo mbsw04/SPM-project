@@ -12,6 +12,12 @@
     font-weight: 600;
 }
 
+.project-header h3 {
+    color: #1E1B75;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
 .project-description {
     color: #6c757d;
     font-size: 1.1rem;
@@ -144,12 +150,15 @@
 }
 
 .requirements-section {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    */
 }
 
 .requirement-box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: white;
     border-radius: 15px;
     padding: 1.5rem;
