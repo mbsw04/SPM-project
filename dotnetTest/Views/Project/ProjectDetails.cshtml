@@ -60,7 +60,7 @@
                             <div class="task-item">
                                 <div>
                                     <h6 class="mb-1">@task.TaskDescription</h6>
-                                    <small class="text-muted">Assigned to: @task.AssignedTo</small>
+                                    <small class="text-muted">Assigned to: @task.AssignedTo.MemberFirstName  @task.AssignedTo.MemberLastName</small>
                                 </div>
                                 <span class="badge bg-primary">Due: @task.TaskDueDate.ToString()</span>
                             </div>

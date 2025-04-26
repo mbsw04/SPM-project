@@ -9,41 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f475861e-5f08-4c8c-a993-4b6f84d21ab8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SPM-project.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SPM-project.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/Profile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Profile.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Project/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Project/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Project/ProjectDetails.cshtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Project/ProjectDetails.cshtml.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.staticwebassets.endpoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/dotnetTest.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/37844yutcj-1c3dt53asn.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/64ex6n11xe-fbto0ofqap.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ktjdfh9sig-fvpvq4cic8.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/z1jxmte7gv-fvpvq4cic8.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/dotnetTest.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/ref/dotnetTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/ref/dotnetTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/refint/dotnetTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/refint/dotnetTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/Views/Project/ProjectDetails.cshtml.rz.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/Views/Project/ProjectDetails.cshtml.rz.scp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/bundle/dotnetTest.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/bundle/dotnetTest.styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/projectbundle/dotnetTest.bundle.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/projectbundle/dotnetTest.bundle.scp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.dotnetTest.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.dotnetTest.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.dotnetTest.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.dotnetTest.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/home-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/home-index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/project-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/project-details.css" afterDir="false" />
-    </list>
+    <list default="true" id="f475861e-5f08-4c8c-a993-4b6f84d21ab8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
