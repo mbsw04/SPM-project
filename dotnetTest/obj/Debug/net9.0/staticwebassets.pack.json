@@ -2,11 +2,19 @@
   "Files": [
     {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/obj/Debug/net9.0/scopedcss/projectbundle/dotnetTest.bundle.scp.css",
-      "PackagePath": "staticwebassets/dotnetTest.fvpvq4cic8.bundle.scp.css"
+      "PackagePath": "staticwebassets/dotnetTest.uumkf4njku.bundle.scp.css"
     },
     {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/home-index.css",
       "PackagePath": "staticwebassets/css/home-index.css"
+    },
+    {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/privacy.css",
+      "PackagePath": "staticwebassets/css/privacy.css"
+    },
+    {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/profile.css",
+      "PackagePath": "staticwebassets/css/profile.css"
     },
     {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/project-create.css",

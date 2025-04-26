@@ -4,28 +4,32 @@
     ViewData["Title"] = "Profile";
 }
 
-<div class="container mt-4">
+<link rel="stylesheet" href="~/css/profile.css" />
+
+<div class="container">
     <div class="row">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-body text-center">
+                <div class="profile-photo-container">
                     @if (!string.IsNullOrEmpty(Model.ProfilePhotoUrl))
                     {
-                        <img src="@Model.ProfilePhotoUrl" alt="Profile Photo" class="rounded-circle img-fluid mb-3" style="max-width: 200px;" />
+                        <img src="@Model.ProfilePhotoUrl" alt="Profile Photo" class="profile-photo" />
                     }
                     else
                     {
-                        <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 200px; height: 200px;">
-                            <i class="bi bi-person-fill" style="font-size: 5rem;"></i>
+                        <div class="profile-photo-placeholder">
+                            <i class="bi bi-person-fill" style="font-size: 5rem; color: #4a4aff;"></i>
                         </div>
                     }
-                    
+                </div>
+                
+                <div class="upload-form">
                     <form asp-action="UploadProfilePhoto" asp-controller="Account" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="photo" class="form-label">Update Profile Photo</label>
+                            <label for="photo">Update Profile Photo</label>
                             <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required />
                         </div>
-                        <button type="submit" class="btn btn-primary">Upload Photo</button>
+                        <button type="submit" class="upload-btn w-100">Upload Photo</button>
                     </form>
                 </div>
             </div>
@@ -33,23 +37,23 @@
         
         <div class="col-md-8">
             <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Profile Information</h3>
-                    <div class="mb-3">
-                        <label class="form-label">Name</label>
-                        <p class="form-control-static">@Model.FirstName @Model.LastName</p>
+                <div class="profile-info">
+                    <h3>Profile Information</h3>
+                    <div class="info-item">
+                        <label>Name</label>
+                        <p>@Model.FirstName @Model.LastName</p>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Username</label>
-                        <p class="form-control-static">@Model.Username</p>
+                    <div class="info-item">
+                        <label>Username</label>
+                        <p>@Model.Username</p>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <p class="form-control-static">@Model.Email</p>
+                    <div class="info-item">
+                        <label>Email</label>
+                        <p>@Model.Email</p>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Occupation</label>
-                        <p class="form-control-static">@Model.Occupation</p>
+                    <div class="info-item">
+                        <label>Occupation</label>
+                        <p>@Model.Occupation</p>
                     </div>
                 </div>
             </div>

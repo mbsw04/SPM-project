@@ -1,0 +1,125 @@
+/* Privacy Policy Page Styles with Animated Background */
+@keyframes gradientWave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+body {
+    background: linear-gradient(-45deg, #4a4aff, #6a6aff, #4a4aff, #6a6aff);
+    background-size: 400% 400%;
+    animation: gradientWave 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    animation: floating 6s ease-in-out infinite;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(74, 74, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.card-header h1 {
+    color: #4a4aff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    color: #333;
+}
+
+.card-body h2 {
+    color: #4a4aff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-body ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card-body li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Decorative elements */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #4a4aff, #6a6aff);
+    border-radius: 16px;
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-header h1 {
+        font-size: 2rem;
+    }
+} 

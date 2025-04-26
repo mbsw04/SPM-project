@@ -1,147 +1,157 @@
 @model dotnetTest.Models.ProjectInfo
+
 @{
     ViewData["Title"] = "Project Details";
 }
 
+<link rel="stylesheet" href="~/css/project-details.css" />
+
 <div class="container">
     <div class="card">
-        <div class="card-header bg-primary text-white">
-            <h2 class="mb-0">@Model.ProjectName</h2>
+        <div class="card-header">
+            <h1>@Model.ProjectName</h1>
+            <h3>Project Manager: @Model.ProjectManagerName</h3>
         </div>
-        
         <div class="card-body">
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <h4>Project Manager</h4>
-                    <p class="lead">@Model.ProjectManagerName</p>
-                    
-                    <h4>Due Date</h4>
-                    <p class="lead">@Model.ProjectDueDate</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Project Description</h4>
-                    <p class="lead">@Model.ProjectDescription</p>
-                </div>
-            </div>
+            <section class="mb-4">
+                <h2>Project Description</h2>
+                <p>@Model.ProjectDescription</p>
+            </section>
 
-            <div class="row mb-4">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h4 class="mb-0">Requirements</h4>
-                                <a href="@Url.Action("AddRequirements", "Project", new { projectId = Model.ProjectId })" class="btn btn-primary">
-                                    @if (Model.FunctionalRequirements?.Any() == true || Model.NonFunctionalRequirements?.Any() == true)
-                                    {
-                                        <span>Edit Requirements</span>
-                                    }
-                                    else
-                                    {
-                                        <span>Add Requirements</span>
-                                    }
-                                </a>
+            <section class="mb-4">
+                <h2>Due Date</h2>
+                <p>@Model.ProjectDueDate</p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Team Members</h2>
+                @if (Model.Members?.Any() == true)
+                {
+                    <div class="members-grid">
+                        @foreach (var member in Model.Members)
+                        {
+                            <div class="member-card">
+                                <h4>@member.MemberFirstName @member.MemberLastName</h4>
+                                <p>Hours Contributing: @member.HoursContributing</p>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            @if (Model.FunctionalRequirements?.Any() == true || Model.NonFunctionalRequirements?.Any() == true)
-                            {
-                                @if (Model.FunctionalRequirements?.Any() == true)
-                                {
-                                    <h5>Functional Requirements:</h5>
-                                    <ul class="list-group mb-4">
-                                        @foreach (var req in Model.FunctionalRequirements)
-                                        {
-                                            <li class="list-group-item">@req</li>
-                                        }
-                                    </ul>
-                                }
-                                @if (Model.NonFunctionalRequirements?.Any() == true)
-                                {
-                                    <h5>Non-Functional Requirements:</h5>
-                                    <ul class="list-group">
-                                        @foreach (var req in Model.NonFunctionalRequirements)
-                                        {
-                                            <li class="list-group-item">@req</li>
-                                        }
-                                    </ul>
-                                }
-                            }
-                            else
-                            {
-                                <p class="text-muted">No requirements added yet.</p>
-                            }
-                        </div>
+                        }
                     </div>
-                </div>
-            </div>
+                }
+                else
+                {
+                    <p>No team members added yet.</p>
+                }
+                <a href="@Url.Action("Search", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Team Member</a>
+            </section>
 
-            <div class="row mb-4">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h4 class="mb-0">Tasks</h4>
-                                <a href="@Url.Action("AddTask", "Project", new { projectId = Model.ProjectId })" class="btn btn-primary">Add Task</a>
+            <section class="mb-4">
+                <h2>Tasks</h2>
+                @if (Model.Tasks?.Any() == true)
+                {
+                    <div class="tasks-grid">
+                        @foreach (var task in Model.Tasks)
+                        {
+                            <div class="task-card">
+                                <h4>@task.TaskDescription</h4>
+                                <p>Due: @task.TaskDueDate</p>
+                                <p>Assigned to: @(task.AssignedTo?.MemberFirstName + " " + task.AssignedTo?.MemberLastName)</p>
+                                <p>Status: @(task.TaskActive == true ? "Completed" : "In Progress")</p>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            @if (Model.Tasks?.Any() == true)
-                            {
-                                <ul class="list-group">
-                                    @foreach (var task in Model.Tasks)
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p>No tasks added yet.</p>
+                }
+                <a href="@Url.Action("AddTask", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Task</a>
+            </section>
+
+            <section class="mb-4">
+                <h2>Requirements</h2>
+                @if (Model.FunctionalRequirements?.Any() == true || Model.NonFunctionalRequirements?.Any() == true)
+                {
+                    <div class="requirements-grid">
+                        @if (Model.FunctionalRequirements?.Any() == true)
+                        {
+                            <div class="requirement-card">
+                                <h3>Functional Requirements</h3>
+                                <ul>
+                                    @foreach (var req in Model.FunctionalRequirements)
                                     {
-                                        <li class="list-group-item">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div>
-                                                    <h6 class="mb-1">@task.TaskDescription</h6>
-                                                    <small class="text-muted">Assigned to: @task.AssignedTo</small>
-                                                </div>
-                                                <span class="badge bg-primary">Due: @task.TaskDueDate</span>
-                                            </div>
-                                        </li>
+                                        <li>@req</li>
                                     }
                                 </ul>
-                            }
-                            else
-                            {
-                                <p class="text-muted">No tasks added yet.</p>
-                            }
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h4 class="mb-0">Team Members</h4>
-                                <a href="@Url.Action("Search", "Project")" class="btn btn-primary">Add Member</a>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            @if (Model.Members?.Any() == true)
-                            {
-                                <ul class="list-group">
-                                    @foreach (var member in Model.Members)
+                        }
+                        @if (Model.NonFunctionalRequirements?.Any() == true)
+                        {
+                            <div class="requirement-card">
+                                <h3>Non-Functional Requirements</h3>
+                                <ul>
+                                    @foreach (var req in Model.NonFunctionalRequirements)
                                     {
-                                        <li class="list-group-item">@member</li>
+                                        <li>@req</li>
                                     }
                                 </ul>
-                            }
-                            else
-                            {
-                                <p class="text-muted">No team members added yet.</p>
-                            }
-                        </div>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p>No requirements added yet.</p>
+                }
+                <a href="@Url.Action("AddRequirements", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Requirements</a>
+            </section>
+
+            <section class="mb-4">
+                <h2>Effort Tracking</h2>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3>Project Management</h3>
+                        <p>@Model.ProjectManagementHours hours</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Requirements Analysis</h3>
+                        <p>@Model.RequirementAnalysisHours hours</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Design</h3>
+                        <p>@Model.DesignHours hours</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Coding</h3>
+                        <p>@Model.CodingHours hours</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Testing</h3>
+                        <p>@Model.TestingHours hours</p>
                     </div>
                 </div>
-            </div>
-        </div>
+                <a href="@Url.Action("EffortTracking", "Project", new { projectId = Model.ProjectId })" class="createBtn">Update Effort Hours</a>
+            </section>
 
-        <div class="card-footer">
-            <a asp-action="Index" class="btn btn-secondary">Back to Projects</a>
+            <section class="mb-4">
+                <h2>Risks</h2>
+                @if (Model.Risks?.Any() == true)
+                {
+                    <div class="risks-grid">
+                        @foreach (var risk in Model.Risks)
+                        {
+                            <div class="risk-card">
+                                <h4>@risk.RiskDescription</h4>
+                                <p>Status: @risk.RiskStatus</p>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p>No risks identified yet.</p>
+                }
+                <a href="@Url.Action("AddRisk", "Project", new { projectId = Model.ProjectId })" class="createBtn">Add Risk</a>
+            </section>
         </div>
     </div>
 </div> 

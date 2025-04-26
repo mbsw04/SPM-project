@@ -6,6 +6,18 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".task-button").forEach(function (card) {
+            card.addEventListener("click", function (e) {
+                if (!e.target.closest("a")) {
+                    const href = card.getAttribute("data-href");
+                    if (href) {
+                        window.location.href = href;
+                    }
+                }
+            });
+        });
+    });</script>
 <script>
     function updateDateTime() {
         const now = new Date();
@@ -30,7 +42,7 @@
             @foreach (var project in Model)
             {
                 <button class="task-button" href="@Url.Action("ProjectDetails", "Project", new { id = project.ProjectId })">
-                    <strong>@project.ProjectName</strong><br>
+                    <strong> <a lass="proj" href="@Url.Action("ProjectDetails", "Project", new { id = project.ProjectId })">@project.ProjectName</a> </strong><br>
                     <span class="due-date">Due date: @project.ProjectDueDate</span><br>
                     <span class="description">@project.ProjectDescription</span>
                 </button>
