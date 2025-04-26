@@ -1,5 +1,5 @@
 # Kennesaw State University: SWE 4663 Software Project Management Semester Project
-
+Here is the link to our product!
 http://manageme1.us-east-1.elasticbeanstalk.com/ <br><br>
 
 This repository contains the source code for ManageMe.io. It also contains this README that lists the product team members, includes the documents that went into the planning of this product. It also explains how we utlized AWS to host our product along with MongoDB to handle our live database. This repository also provides a quality video that further explains this repository and how. The source code of this product was completed in primary C#, HTML, and CSS with proper naming conventions and coding standards.
