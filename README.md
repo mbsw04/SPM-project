@@ -67,4 +67,4 @@ The user has the option to upload a profile photo to their account but have a de
 
 ## Final Video Presentation
 This final video demonstration of our product on YouTube covers over our repository and the product itself. We also briefly cover how we utilized AWS to host our product and MongoDB for our database.<br><br>
-[Click here to access our video!]()
+[Click here to access our video!](https://www.youtube.com/watch?v=alnv505AxKQ)
