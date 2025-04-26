@@ -66,5 +66,5 @@ The user model used to store user information possessed the following attributes
 The user has the option to upload a profile photo to their account but have a defaukt icon if not uploaded.
 
 ## Final Video Presentation
-This final video demonstration of our product on YouTube covers over our repository and the product itself. We also briefly cover how we utilized AWS to host our product and MongoDB for our database.<br><br>
+This final video demonstration of our product on YouTube covers over our repository and the product itself.<br><br>
 [Click here to access our video!](https://www.youtube.com/watch?v=alnv505AxKQ)
