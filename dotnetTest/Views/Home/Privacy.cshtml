@@ -1,6 +1,166 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h1>Privacy Policy</h1>
+            <p class="text-muted">Last updated: @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+        </div>
+        <div class="card-body">
+            <section class="mb-4">
+                <h2>Introduction</h2>
+                <p>This Privacy Policy describes how the Project Management System ("we," "our," or "us") collects, uses, and protects your information. This system is developed as part of a school project and is intended for educational purposes only.</p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Information We Collect</h2>
+                <p>We collect the following types of information:</p>
+                <ul>
+                    <li>Personal Information: Name, email address, and occupation</li>
+                    <li>Project Information: Project details, team members, tasks, and requirements</li>
+                    <li>Usage Data: Information about how you interact with our system</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li>To provide and maintain our project management services</li>
+                    <li>To manage user accounts and project teams</li>
+                    <li>To track project progress and team collaboration</li>
+                    <li>To improve our system's functionality and user experience</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Data Security</h2>
+                <p>We implement appropriate security measures to protect your information:</p>
+                <ul>
+                    <li>Secure password storage using industry-standard encryption</li>
+                    <li>Regular system updates and security patches</li>
+                    <li>Access controls to protect sensitive information</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Data Storage and Retention</h2>
+                <p>Your data is stored securely in our database and is retained for the duration of the school project. As this is an educational project, we may periodically clean up or reset the database for testing and demonstration purposes.</p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Third-Party Services</h2>
+                <p>This project uses the following third-party services:</p>
+                <ul>
+                    <li>MongoDB for data storage</li>
+                    <li>ASP.NET Core for web application framework</li>
+                    <li>Bootstrap for user interface components</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Your Rights</h2>
+                <p>As a user of this system, you have the right to:</p>
+                <ul>
+                    <li>Access your personal information</li>
+                    <li>Update or correct your information</li>
+                    <li>Request deletion of your account</li>
+                    <li>Opt-out of certain data collection</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Educational Purpose</h2>
+                <p>This system is developed as part of a school project and is intended for educational purposes only. While we strive to implement best practices in data protection, this is not a production system and should not be used for storing sensitive or confidential information.</p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Contact Information</h2>
+                <p>If you have any questions about this Privacy Policy, please contact:</p>
+                <ul>
+                    <li>Project Team: ManagMe Devs</li>
+                    <li>Course: Software Project Management</li>
+                    <li>Institution: Kennesaw State University</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+    }
+
+    .card-header {
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 20px;
+    }
+
+    .card-header h1 {
+        color: #1a1a6d;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        color: #333;
+    }
+
+    .card-body h2 {
+        color: #1a1a6d;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .card-body p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .card-body ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-body li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+    }
+
+   /* media (max-width: 768px) {
+        .container {
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .card {
+            padding: 20px;
+        }
+
+        .card-header h1 {
+            font-size: 2rem;
+        }
+    } */
+</style>

@@ -4,53 +4,46 @@
     ViewData["Title"] = "Create Project";
 }
 
-<h2>Create a New Project</h2>
+<link rel="stylesheet" href="~/css/project-create.css" />
 
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="ProjectName" class="control-label"></label>
-        <input asp-for="ProjectName" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="ProjectManagerName" class="control-label"></label>
-        <input asp-for="ProjectManagerName" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ProjectDescription" class="control-label"></label>
-        <textarea asp-for="ProjectDescription" class="form-control"></textarea>
-    </div>
-    <div class="form-group">
-        <label asp-for="ProjectDueDate" class="control-label"></label>
-        <input asp-for="ProjectDueDate" class="form-control" type="date"></input>
-    </div>
-
-@*<h4>Members</h4>
-    <div id="members-container">
-        <div class="member-item">
-            <input type="text" name="Members[0]" placeholder="Member Name" class="form-control" required />
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>Create a New Project</h2>
         </div>
-    </div>
-    <button type="button" id="add-member" class="btn btn-secondary">Add Member</button>
-    *@
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label asp-for="ProjectName" class="control-label">Project Name</label>
+                <input asp-for="ProjectName" class="form-control" placeholder="Enter project name" />
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
 
-    <div class="form-group mt-3">
-        <button type="submit" class="btn btn-primary">Create</button>
-        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            <div class="form-group">
+                <label asp-for="ProjectManagerName" class="control-label">Project Manager</label>
+                <input asp-for="ProjectManagerName" class="form-control" placeholder="Enter project manager name" />
+                <span asp-validation-for="ProjectManagerName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProjectDescription" class="control-label">Project Description</label>
+                <textarea asp-for="ProjectDescription" class="form-control" placeholder="Describe your project..."></textarea>
+                <span asp-validation-for="ProjectDescription" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProjectDueDate" class="control-label">Due Date</label>
+                <input asp-for="ProjectDueDate" class="form-control" type="date" />
+                <span asp-validation-for="ProjectDueDate" class="text-danger"></span>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Create Project</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
     </div>
-</form>
+</div>
 
 @section Scripts {
-    <script>
-        document.getElementById('add-member').addEventListener('click', function() {
-            const container = document.getElementById('members-container');
-            const newIndex = container.children.length;
-            const newMemberDiv = document.createElement('div');
-            newMemberDiv.className = 'member-item';
-            newMemberDiv.innerHTML = `
-                <input type="text" name="Members[${newIndex}]" placeholder="Member Name" class="form-control" required />
-            `;
-            container.appendChild(newMemberDiv);
-        });
-    </script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

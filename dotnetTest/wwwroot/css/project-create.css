@@ -1,0 +1,128 @@
+/* Project Creation Form Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8fc;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header h2 {
+    color: #1a1a6d;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1a1a6d;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #1a1a6d;
+    box-shadow: 0 0 0 3px rgba(26, 26, 109, 0.1);
+    outline: none;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #1a1a6d;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1F1FFF;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Validation Styles */
+.text-danger {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+} 

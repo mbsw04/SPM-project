@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/dotnetTest.fvpvq4cic8.bundle.scp.css"
     },
     {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/home-index.css",
+      "PackagePath": "staticwebassets/css/home-index.css"
+    },
+    {
+      "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/project-create.css",
+      "PackagePath": "staticwebassets/css/project-create.css"
+    },
+    {
       "Id": "/Users/connyn/Documents/GitHub/SPM-project/dotnetTest/wwwroot/css/project-details.css",
       "PackagePath": "staticwebassets/css/project-details.css"
     },
